@@ -164,6 +164,12 @@ body.idle{cursor:none}
 .nextup i::after{content:"";position:absolute;inset:0;background:var(--muted);transform:translateX(-100%);animation:nextline 3.6s var(--io) infinite}
 @keyframes nextline{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
 
+/* ---------- arca de Noé em escala ---------- */
+.draw.faint{stroke:var(--faint)}
+.draw.dim{stroke:var(--muted);stroke-width:1.5}
+.nlab{position:absolute;font-size:28px;font-weight:650;letter-spacing:-.02em;white-space:nowrap}
+.nlab span{margin-left:10px;font-size:19px;font-weight:500;color:var(--muted)}
+
 /* ---------- foto da transição (Imagens/bloco-0N.jpg) ---------- */
 .logo-wrap.under{opacity:0;transition:opacity .8s var(--ease)}
 .tphoto{position:absolute;inset:0;opacity:0;transition:opacity 1.6s var(--ease);overflow:hidden}
@@ -661,10 +667,10 @@ const SCENES=[
  notes:{q:'(demonstração) A ilustração da Trindade',
  say:['Este desenho é antigo, usado pela igreja há séculos para ensinar a Trindade.','No centro: Deus. O Pai é Deus. O Filho é Deus. O Espírito Santo é Deus.','Mas o Pai não é o Filho, o Filho não é o Espírito, o Espírito não é o Pai. São pessoas distintas.','Não são três deuses. E não é um Deus que muda de “máscara”, ora Pai, ora Filho, ora Espírito.','Atenção: comparações como água, gelo e vapor, ou o ovo com casca, clara e gema, parecem ajudar, mas ensinam erros antigos (uma pessoa que muda de forma, ou Deus dividido em partes). Uma boa pergunta para a IA é justamente: “Quais erros essa comparação ensina?”'],
  bridge:'Deuteronômio 6.4 · Mateus 28.19 · João 1.1 · Atos 5.3-4 · 2 Coríntios 13.14.'}},
-{block:5,theme:'dark',who:'G',type:'tabernacle',title:'Imagens para entender',heading:'Imagens para entender o texto',
+{block:5,theme:'dark',who:'G',type:'noah',title:'Imagens para entender: a arca de Noé',heading:'Imagens para entender o texto',
  notes:{q:'(demonstração) Gerar imagens para entender a Bíblia',
- say:['A IA também gera imagens. Isso ajuda a visualizar coisas difíceis de imaginar: o tabernáculo, o templo, Jerusalém no tempo de Jesus, as viagens de Paulo.','Exemplo: o tabernáculo de Êxodo 25 a 30. Só lendo, é difícil montar na cabeça. Uma ilustração ajuda a entender o pátio, o altar, a bacia, o Lugar Santo e o Santo dos Santos.','Mas atenção: a imagem é uma reconstrução. Não é foto do passado nem revelação. Ela serve ao texto e nunca o substitui.'],
- bridge:'O prompt aparece escrito na tela: “Crie uma ilustração histórica do tabernáculo descrito em Êxodo 25 a 30. Diferencie o que está descrito nas Escrituras do que é reconstrução.”'}},
+ say:['A IA também gera imagens e comparações. Isso ajuda a visualizar coisas difíceis de imaginar só lendo.','Exemplo: a arca de Noé. Gênesis 6.15 diz que ela tinha 300 côvados de comprimento, 50 de largura e 30 de altura. Um côvado é a medida do cotovelo à ponta dos dedos, cerca de 45 cm.','Isso dá mais ou menos 135 metros de comprimento, 22,5 de largura e 13,5 de altura: mais comprida que um campo de futebol, da altura de um prédio de 4 andares, como 11 ônibus enfileirados. Do lado dela, uma pessoa fica minúscula.','Mas atenção: a imagem é uma ilustração. As medidas são aproximadas (o côvado variava um pouco) e o desenho não é foto do passado nem revelação. Ela serve ao texto e nunca o substitui.'],
+ bridge:'O prompt aparece escrito na tela: “Desenhe a arca de Noé em escala, com as medidas de Gênesis 6.15, ao lado de uma pessoa, de um prédio, de um campo de futebol e de ônibus.”'}},
 {block:5,theme:'dark',who:'G',type:'list',title:'Cuidados ao usar a IA',kicker:'Cuidados para tomarmos',items:[
  {t:'Não é autoridade.',s:'Confira tudo na sua Bíblia.'},
  {t:'Proteja seus dados.',s:'Nem os seus segredos, nem os dos outros.'},
@@ -1179,38 +1185,43 @@ T.prompt=(root,s,run)=>{
     await run.wait(32000);[eb,t,...ls,fin].forEach(off);await run.wait(900);});
 };
 
-T.tabernacle=(root,s,run)=>{
+/* arca de Noé em escala (Gênesis 6.15): 300 × 50 × 30 côvados ≈ 135 × 22,5 × 13,5 m; 8 px por metro */
+T.noah=(root,s,run)=>{
   head(root,s,run);
   const pb=h('div','pbar rv','<em>Prompt</em><div></div>',root),pt=pb.lastChild;
-  const svg=svgRoot(root),U=8.4,X0=540,Y0=370,CW=100*U,CHh=50*U,MY=Y0+CHh/2;
-  const rnd=rng(3),noise=S('g',{},svg),dots=[];
-  for(let i=0;i<520;i++)dots.push(S('circle',{cx:X0+rnd()*CW,cy:Y0+rnd()*CHh,r:1+rnd()*2.2,class:'noise',opacity:0},noise));
-  const P=d=>S('path',{d,class:'draw',pathLength:1},svg);
-  const court=P(`M${X0+CW} ${MY-10*U} V${Y0} H${X0} V${Y0+CHh} H${X0+CW} V${MY+10*U}`);
-  const gate=P(`M${X0+CW} ${MY-10*U} V${MY+10*U}`);gate.style.strokeWidth=5;
-  const tx=X0+15*U,tent=P(`M${tx} ${MY-5*U} H${tx+30*U} V${MY+5*U} H${tx} Z`),veil=P(`M${tx+10*U} ${MY-5*U} V${MY+5*U}`);
-  const ark=P(`M${tx+3.6*U} ${MY-1.2*U} h${2.6*U} v${2.4*U} h${-2.6*U} Z`);
-  const laver=S('circle',{cx:X0+58*U,cy:MY,r:2.6*U,class:'draw',pathLength:1},svg);
-  const altar=P(`M${X0+72*U} ${MY-2.5*U} h${5*U} v${5*U} h${-5*U} Z`);
-  const pillars=[];for(let i=0;i<=20;i++){pillars.push([X0+i*5*U,Y0],[X0+i*5*U,Y0+CHh]);}for(let i=1;i<10;i++){pillars.push([X0,Y0+i*5*U],[X0+CW,Y0+i*5*U]);}
-  const pe=pillars.map(([x,y])=>S('circle',{cx:x,cy:y,r:4,class:'pillar'},svg));
-  const LB=[['Santo dos Santos',tx+5*U,MY-5*U-70,true],['Lugar Santo',tx+20*U,MY+5*U+40,false],['Bacia',X0+58*U,MY+3*U+40,false],['Altar',X0+74.5*U,MY-2.5*U-70,false],['Entrada',X0+CW+70,MY-14,false]];
-  const labs=LB.map(([t,x,y,ink])=>{const e=h('div','tlab rv'+(ink?' ink':''),t,root);e.style.left=x+'px';e.style.top=y+'px';e.style.transform='translateX(-50%)';if(t==='Entrada')e.style.transform='none';return e;});
-  const slot=slotEl(root);slot.style.bottom='70px';
-  const all=[court,gate,tent,veil,ark,laver,altar];
+  const svg=svgRoot(root),M=8,X0=420,LEN=135*M,HT=13.5*M,G=575,TOP=G-HT;
+  const P=(d,cls='draw')=>S('path',{d,class:cls,pathLength:1},svg);
+  /* centraliza com "translate" para não brigar com o transform da animação .rv */
+  const lab=(html,x,y,cls='nlab')=>{const e=h('div',cls+' rv',html,root);e.style.left=x+'px';e.style.top=y+'px';e.style.translate=cls.includes('left')?'0':'-50% 0';return e;};
+  const ground=P(`M${X0-60} ${G} H${X0+LEN+260}`,'draw faint');
+  const ark=P(`M${X0} ${TOP+16} H${X0+LEN} L${X0+LEN-22} ${G} H${X0+22} Z M${X0+40} ${TOP+16} V${TOP} H${X0+LEN-40} V${TOP+16}`);
+  const dimL=P(`M${X0} ${TOP-34} H${X0+LEN} M${X0} ${TOP-44} V${TOP-24} M${X0+LEN} ${TOP-44} V${TOP-24}`,'draw dim');
+  const dimH=P(`M${X0-26} ${TOP} V${G} M${X0-36} ${TOP} H${X0-16} M${X0-36} ${G} H${X0-16}`,'draw dim');
+  const bx=X0+LEN+40,bw=12*M;
+  const bld=P(`M${bx} ${G} V${TOP} H${bx+bw} V${G} M${bx} ${TOP+HT/4} H${bx+bw} M${bx} ${TOP+HT/2} H${bx+bw} M${bx} ${TOP+3*HT/4} H${bx+bw}`);
+  const px=bx+bw+34,ph=1.75*M;
+  const man=P(`M${px} ${G} V${G-ph+4} M${px-3} ${G} L${px} ${G-6} L${px+3} ${G} M${px-4} ${G-ph+8} H${px+4} M${px+2.6} ${G-ph+2} A2.6 2.6 0 1 1 ${px-2.6} ${G-ph+2} A2.6 2.6 0 1 1 ${px+2.6} ${G-ph+2}`);
+  const FY=660,FL=105*M,FH=56;
+  const field=P(`M${X0} ${FY} h${FL} v${FH} h${-FL} Z M${X0+FL/2} ${FY} v${FH} M${X0+FL/2+18} ${FY+FH/2} A18 18 0 1 1 ${X0+FL/2-18} ${FY+FH/2} A18 18 0 1 1 ${X0+FL/2+18} ${FY+FH/2}`);
+  const BY=790,buses=[];for(let i=0;i<11;i++){const x=X0+i*98;buses.push(P(`M${x+6} ${BY} h80 a6 6 0 0 1 6 6 v18 h-92 v-18 a6 6 0 0 1 6 -6 Z M${x+8} ${BY+9} h76 M${x+20} ${BY+27} a5 5 0 1 0 0.1 0 M${x+72} ${BY+27} a5 5 0 1 0 0.1 0`));}
+  const L=[lab('135 m <span>300 côvados</span>',X0+LEN/2,TOP-98),lab('13,5 m',X0-170,TOP+HT/2-18),
+    lab('Prédio de 4 andares',bx+bw/2,TOP-64,'tlab'),lab('Pessoa',px+4,G+16,'tlab'),
+    lab('Campo de futebol <span>105 m</span>',X0+FL+40,FY+FH/2-18,'nlab left'),lab('≈ 11 ônibus <span>de 12 m</span>',X0+1078+36,BY-4,'nlab left')];
+  L[1].style.translate='0';
+  const slot=slotEl(root);slot.style.bottom='60px';slot.style.height='150px';
+  const all=[ground,ark,dimL,dimH,bld,man,field,...buses];
   forever(run,async()=>{
-    all.forEach(e=>e.classList.remove('in'));pe.forEach(e=>e.classList.remove('in'));labs.forEach(off);
-    pt.innerHTML='';on(pb);await run.wait(400);
-    await typeInto(run,pt,'Crie uma ilustração histórica do tabernáculo descrito em Êxodo 25 a 30. Diferencie o que está descrito nas Escrituras do que é reconstrução.',22);
-    await run.wait(600);
-    await run.tween(1200,p=>dots.forEach((d,i)=>d.setAttribute('opacity',Math.min(.7,p*1.5)*((i*7)%10/10))),lin);
-    court.classList.add('in');await run.wait(500);
-    run.tween(2400,p=>dots.forEach(d=>d.setAttribute('opacity',(1-p)*.4)),lin);
-    pe.forEach((e,i)=>run.wait(i*18).then(()=>e.classList.add('in')));
-    for(const e of [gate,altar,laver,tent,veil,ark]){e.classList.add('in');await run.wait(420);}
-    await run.wait(900);for(const l of labs){on(l);await run.wait(260);}
-    await say(run,slot,'Êxodo 25–30.',1600);await say(run,slot,'Ilustração. {Não revelação.}',3200);
-    await run.wait(5000);off(pb);labs.forEach(off);all.forEach(e=>e.classList.remove('in'));pe.forEach(e=>e.classList.remove('in'));await run.wait(1800);});
+    all.forEach(e=>e.classList.remove('in'));L.forEach(off);pt.innerHTML='';on(pb);await run.wait(400);
+    await typeInto(run,pt,'Desenhe a arca de Noé em escala, com as medidas de Gênesis 6.15, ao lado de uma pessoa, de um prédio, de um campo de futebol e de ônibus.',22);
+    await run.wait(600);ground.classList.add('in');ark.classList.add('in');await run.wait(1400);
+    dimL.classList.add('in');on(L[0]);await run.wait(900);dimH.classList.add('in');on(L[1]);await run.wait(1100);
+    man.classList.add('in');on(L[3]);await run.wait(900);bld.classList.add('in');on(L[2]);await run.wait(1200);
+    field.classList.add('in');await run.wait(700);on(L[4]);await run.wait(1100);
+    for(const b of buses){b.classList.add('in');await run.wait(110);}on(L[5]);await run.wait(1200);
+    await say(run,slot,'Gênesis 6.15 · {300 × 50 × 30 côvados}',2200);
+    await say(run,slot,'Mais comprida que um campo de futebol.',2200);
+    await say(run,slot,'Ilustração. {Não revelação.}',2800);
+    await run.wait(4000);off(pb);L.forEach(off);all.forEach(e=>e.classList.remove('in'));await run.wait(1800);});
 };
 
 /* ---- bloco 6 ---- */

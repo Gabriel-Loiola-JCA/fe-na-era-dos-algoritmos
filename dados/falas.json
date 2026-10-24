@@ -459,7 +459,7 @@
     "id": "t43",
     "tela": 43,
     "kind": "cue",
-    "title": "Imagens para entender",
+    "title": "Imagens para entender: a arca de Noé",
     "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
    },
    {
@@ -1685,14 +1685,15 @@
     "tela": 43,
     "kind": "card",
     "both": false,
-    "title": "Imagens para entender",
+    "title": "Imagens para entender: a arca de Noé",
     "q": "(demonstração) Gerar imagens para entender a Bíblia",
     "say": [
-     "A IA também gera imagens. Isso ajuda a visualizar coisas difíceis de imaginar: o tabernáculo, o templo, Jerusalém no tempo de Jesus, as viagens de Paulo.",
-     "Exemplo: o tabernáculo de Êxodo 25 a 30. Só lendo, é difícil montar na cabeça. Uma ilustração ajuda a entender o pátio, o altar, a bacia, o Lugar Santo e o Santo dos Santos.",
-     "Mas atenção: a imagem é uma reconstrução. Não é foto do passado nem revelação. Ela serve ao texto e nunca o substitui."
+     "A IA também gera imagens e comparações. Isso ajuda a visualizar coisas difíceis de imaginar só lendo.",
+     "Exemplo: a arca de Noé. Gênesis 6.15 diz que ela tinha 300 côvados de comprimento, 50 de largura e 30 de altura. Um côvado é a medida do cotovelo à ponta dos dedos, cerca de 45 cm.",
+     "Isso dá mais ou menos 135 metros de comprimento, 22,5 de largura e 13,5 de altura: mais comprida que um campo de futebol, da altura de um prédio de 4 andares, como 11 ônibus enfileirados. Do lado dela, uma pessoa fica minúscula.",
+     "Mas atenção: a imagem é uma ilustração. As medidas são aproximadas (o côvado variava um pouco) e o desenho não é foto do passado nem revelação. Ela serve ao texto e nunca o substitui."
     ],
-    "bridge": "O prompt aparece escrito na tela: “Crie uma ilustração histórica do tabernáculo descrito em Êxodo 25 a 30. Diferencie o que está descrito nas Escrituras do que é reconstrução.”",
+    "bridge": "O prompt aparece escrito na tela: “Desenhe a arca de Noé em escala, com as medidas de Gênesis 6.15, ao lado de uma pessoa, de um prédio, de um campo de futebol e de ônibus.”",
     "tip": ""
    },
    {
