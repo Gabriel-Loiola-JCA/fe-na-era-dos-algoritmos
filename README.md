@@ -8,7 +8,6 @@ Bate-Papo Jovem da Igreja Evangélica Fonte de Amor em Cristo (IEFAC).
 |---|---|
 | Início, com as abas | `/` |
 | Telão | `/telao/` |
-| Telão com fotos do Unsplash | `/telao-unsplash/` |
 | Falas do Jonatas | `/#jonatas` |
 | Falas do Martinho | `/#martinho` |
 | Falas do Gabriel | `/#gabriel` |
@@ -27,4 +26,4 @@ Abra `/telao/` no computador do telão e aperte **F** para tela cheia.
 
 ## Créditos
 
-Fotos das transições: veja `telao/Imagens/creditos.txt`. Versículos na Nova Versão Internacional (NVI).
+Imagens das transições: veja `telao/Imagens/creditos.txt`. Versículos na Nova Versão Internacional (NVI).
