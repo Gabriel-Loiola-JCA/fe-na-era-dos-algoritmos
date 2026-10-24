@@ -1,0 +1,1986 @@
+{
+ "atualizado": "2026-10-24",
+ "pessoas": {
+  "jonatas": [
+   {
+    "kind": "block",
+    "id": "b0",
+    "block": 0,
+    "label": "Abertura",
+    "title": "Abertura"
+   },
+   {
+    "id": "t1",
+    "tela": 1,
+    "kind": "cue",
+    "title": "Tela de espera",
+    "text": "Deixe rodando enquanto o pessoal chega."
+   },
+   {
+    "id": "t2",
+    "tela": 2,
+    "kind": "fala",
+    "title": "Boas-vindas e oração",
+    "say": [
+     "Boa noite, pessoal! Sejam muito bem-vindos ao Bate-Papo Jovem.",
+     "O tema de hoje é: Fé na Era dos Algoritmos.",
+     "Antes de começar, vamos orar."
+    ]
+   },
+   {
+    "id": "t3",
+    "tela": 3,
+    "kind": "fala",
+    "title": "Apresentar quem conversa",
+    "say": [
+     "Quem conversa com a gente hoje:",
+     "O Martinho, que vai trazer a parte bíblica.",
+     "E o Gabriel, que vai falar da parte de tecnologia: como funcionam os algoritmos e a inteligência artificial.",
+     "Eu sou o Jonatas e vou conduzir a nossa conversa."
+    ]
+   },
+   {
+    "id": "t4",
+    "tela": 4,
+    "kind": "fala",
+    "title": "A ideia do encontro",
+    "say": [
+     "“Tudo o que consumimos nos forma. A pergunta não é se seremos formados, mas por quem: pelo feed ou por Cristo.”",
+     "O caminho da conversa: o que o algoritmo faz com o nosso coração e a nossa atenção (blocos 1 e 2), com a nossa identidade e com a verdade (3 e 4), passando pela IA (5), até o que nenhuma tela substitui (6)."
+    ]
+   },
+   {
+    "id": "t5",
+    "tela": 5,
+    "kind": "cue",
+    "title": "Pausa",
+    "text": "A seguir: Bloco 01 · Quem te forma?."
+   },
+   {
+    "kind": "block",
+    "id": "b1",
+    "block": 1,
+    "label": "Bloco 01",
+    "title": "Quem te forma?"
+   },
+   {
+    "id": "t6",
+    "tela": 6,
+    "kind": "fala",
+    "title": "Bloco 01 · Quem te forma?",
+    "say": [
+     "Bloco 1: Quem te forma?",
+     "O algoritmo não é neutro. Ele aprende rápido aquilo que o nosso coração deseja."
+    ]
+   },
+   {
+    "id": "t7",
+    "tela": 7,
+    "kind": "ask",
+    "title": "Está em tudo",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "Antes de explicar como funciona: onde está o algoritmo?"
+   },
+   {
+    "id": "t8",
+    "tela": 8,
+    "kind": "ask",
+    "title": "Como o algoritmo decide",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "Na prática, como o algoritmo decide o que chega até nós? E por que o objetivo dele é o nosso tempo de tela, e não o nosso bem?"
+   },
+   {
+    "id": "t9",
+    "tela": 9,
+    "kind": "ask",
+    "title": "A tecnologia é neutra?",
+    "to": "M",
+    "toLabel": "Para o Martinho",
+    "q": "Muita gente diz que a tecnologia é neutra e que tudo depende de como se usa. Essa ideia se sustenta biblicamente?"
+   },
+   {
+    "id": "t10",
+    "tela": 10,
+    "kind": "ask",
+    "title": "Manipula ou entrega?",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "O algoritmo manipula as pessoas ou só entrega o que elas já procuram? Onde fica a responsabilidade de cada um?"
+   },
+   {
+    "id": "t11",
+    "tela": 11,
+    "kind": "ask",
+    "title": "O coração é enganoso",
+    "to": "M",
+    "toLabel": "Para o Martinho",
+    "q": "Se o coração é enganoso e o algoritmo aprende com os nossos desejos, ele acaba alimentando o que há de pior em nós?"
+   },
+   {
+    "id": "t12",
+    "tela": 12,
+    "kind": "verses",
+    "title": "Textos de apoio",
+    "verses": [
+     {
+      "ref": "Mateus 6.21",
+      "text": "Pois onde estiver o seu tesouro, aí também estará o seu coração."
+     },
+     {
+      "ref": "Jeremias 17.9",
+      "text": "O coração é mais enganoso que qualquer outra coisa e sua doença é incurável. Quem é capaz de compreendê-lo?"
+     },
+     {
+      "ref": "Provérbios 4.23",
+      "text": "Acima de tudo, guarde o seu coração, pois dele depende toda a sua vida."
+     }
+    ],
+    "text": "Cada → mostra o próximo versículo; ← volta um. Quem for ler, lê com calma."
+   },
+   {
+    "id": "t13",
+    "tela": 13,
+    "kind": "cue",
+    "title": "Pausa",
+    "text": "A seguir: Bloco 02 · A guerra pela atenção."
+   },
+   {
+    "kind": "block",
+    "id": "b2",
+    "block": 2,
+    "label": "Bloco 02",
+    "title": "A guerra pela atenção"
+   },
+   {
+    "id": "t14",
+    "tela": 14,
+    "kind": "fala",
+    "title": "Bloco 02 · A guerra pela atenção",
+    "say": [
+     "Bloco 2: A guerra pela atenção",
+     "Atenção virou o bem mais disputado do mundo. E a fé depende dela: oração, leitura e silêncio."
+    ]
+   },
+   {
+    "id": "t15",
+    "tela": 15,
+    "kind": "ask",
+    "title": "Feito para prender",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "Rolagem infinita, notificações, vídeos curtos: que recursos são pensados para prender a atenção, e por que funcionam tão bem?"
+   },
+   {
+    "id": "t16",
+    "tela": 16,
+    "kind": "ask",
+    "title": "Uso ou dependência?",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "Vício em tela é exagero ou é real? Onde fica a linha entre uso intenso e dependência?"
+   },
+   {
+    "id": "t17",
+    "tela": 17,
+    "kind": "ask",
+    "title": "Uma geração distraída consegue orar?",
+    "to": "M",
+    "toLabel": "Para o Martinho",
+    "q": "Uma geração que não consegue se concentrar consegue orar, ler a Bíblia e ouvir uma pregação? A Bíblia valoriza o silêncio e o descanso: o que acontece com a fé quando nunca mais ficamos a sós com Deus?"
+   },
+   {
+    "id": "t18",
+    "tela": 18,
+    "kind": "verses",
+    "title": "Textos de apoio",
+    "verses": [
+     {
+      "ref": "Lucas 5.16",
+      "text": "Mas Jesus retirava-se para lugares solitários, e orava."
+     },
+     {
+      "ref": "Salmos 46.10",
+      "text": "Parem de lutar! Saibam que eu sou Deus! Serei exaltado entre as nações, serei exaltado na terra."
+     },
+     {
+      "ref": "1 Coríntios 6.12",
+      "text": "“Tudo me é permitido”, mas nem tudo convém. “Tudo me é permitido”, mas eu não deixarei que nada me domine."
+     }
+    ],
+    "text": "Cada → mostra o próximo versículo; ← volta um. Quem for ler, lê com calma."
+   },
+   {
+    "id": "t19",
+    "tela": 19,
+    "kind": "cue",
+    "title": "Pausa",
+    "text": "A seguir: Bloco 03 · O feed que diz quem você é."
+   },
+   {
+    "kind": "block",
+    "id": "b3",
+    "block": 3,
+    "label": "Bloco 03",
+    "title": "O feed que diz quem você é"
+   },
+   {
+    "id": "t20",
+    "tela": 20,
+    "kind": "fala",
+    "title": "Bloco 03 · O feed que diz quem você é",
+    "say": [
+     "Bloco 3: O feed que diz quem você é",
+     "As redes ensinam a medir valor em curtidas. O evangelho diz que o nosso valor já foi definido."
+    ]
+   },
+   {
+    "id": "t21",
+    "tela": 21,
+    "kind": "ask",
+    "title": "Recorte ≠ realidade",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "Filtro, edição, ângulo, luz: quanto do que aparece nas redes é real e quanto é produzido? E como isso afeta quem só consome?"
+   },
+   {
+    "id": "t22",
+    "tela": 22,
+    "kind": "ask",
+    "title": "Postar o que vive?",
+    "to": "A",
+    "toLabel": "Para os dois",
+    "q": "A geração das redes vive para postar ou posta o que vive? Até a fé corre o risco de virar vitrine?"
+   },
+   {
+    "id": "t23",
+    "tela": 23,
+    "kind": "ask",
+    "title": "Seu valor já foi definido",
+    "to": "M",
+    "toLabel": "Para o Martinho",
+    "q": "As redes ensinam a medir valor por curtidas e seguidores. Qual é o contraponto do evangelho sobre a nossa identidade? E o que a Bíblia diz para quem sai das redes se sentindo menor?"
+   },
+   {
+    "id": "t24",
+    "tela": 24,
+    "kind": "verses",
+    "title": "Textos de apoio",
+    "verses": [
+     {
+      "ref": "1 Samuel 16.7",
+      "text": "O Senhor não vê como o homem: o homem vê a aparência, mas o Senhor vê o coração."
+     },
+     {
+      "ref": "Efésios 2.10",
+      "text": "Porque somos criação de Deus realizada em Cristo Jesus para fazermos boas obras, as quais Deus preparou antes para nós as praticarmos."
+     },
+     {
+      "ref": "Gálatas 1.10",
+      "text": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se eu ainda estivesse procurando agradar a homens, não seria servo de Cristo."
+     }
+    ],
+    "text": "Cada → mostra o próximo versículo; ← volta um. Quem for ler, lê com calma."
+   },
+   {
+    "id": "t25",
+    "tela": 25,
+    "kind": "cue",
+    "title": "Pausa",
+    "text": "A seguir: Bloco 04 · Verdade sob medida."
+   },
+   {
+    "kind": "block",
+    "id": "b4",
+    "block": 4,
+    "label": "Bloco 04",
+    "title": "Verdade sob medida"
+   },
+   {
+    "id": "t26",
+    "tela": 26,
+    "kind": "fala",
+    "title": "Bloco 04 · Verdade sob medida",
+    "say": [
+     "Bloco 4: Verdade sob medida",
+     "Cada um recebe uma versão do mundo feita sob medida. Para quem segue Aquele que é a Verdade, discernir virou urgente."
+    ]
+   },
+   {
+    "id": "t27",
+    "tela": 27,
+    "kind": "ask",
+    "title": "Bolhas",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "O que são as bolhas, e por que duas pessoas veem mundos completamente diferentes no mesmo app?"
+   },
+   {
+    "id": "t28",
+    "tela": 28,
+    "kind": "ask",
+    "title": "Teologia em cortes",
+    "to": "M",
+    "toLabel": "Para o Martinho",
+    "q": "Muita gente hoje aprende teologia por cortes de um minuto. Isso aproxima as pessoas da Palavra ou empobrece a fé?"
+   },
+   {
+    "id": "t29",
+    "tela": 29,
+    "kind": "ask",
+    "title": "Polêmica engaja",
+    "to": "A",
+    "toLabel": "Para os dois",
+    "q": "Por que briga e polêmica entre cristãos engajam mais do que conteúdo que edifica? O que isso diz sobre nós?"
+   },
+   {
+    "id": "t30",
+    "tela": 30,
+    "kind": "ask",
+    "title": "Parece real. É real?",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "Com vídeos, fotos e vozes falsos criados por IA, como reconhecer o que é verdade antes de compartilhar?"
+   },
+   {
+    "id": "t31",
+    "tela": 31,
+    "kind": "verses",
+    "title": "Textos de apoio",
+    "verses": [
+     {
+      "ref": "2 Timóteo 4.3-4",
+      "text": "Pois virá o tempo em que não suportarão a sã doutrina; ao contrário, sentindo coceira nos ouvidos, juntarão mestres para si mesmos, segundo os seus próprios desejos. Eles se recusarão a dar ouvidos à verdade, voltando-se para os mitos."
+     },
+     {
+      "ref": "Atos 17.11",
+      "text": "Os bereanos eram mais nobres do que os tessalonicenses, pois receberam a mensagem com grande interesse, examinando todos os dias as Escrituras, para ver se tudo era assim mesmo."
+     },
+     {
+      "ref": "Provérbios 18.17",
+      "text": "O primeiro a apresentar a sua causa parece ter razão, até que outro venha à frente e o questione."
+     }
+    ],
+    "text": "Cada → mostra o próximo versículo; ← volta um. Quem for ler, lê com calma."
+   },
+   {
+    "id": "t32",
+    "tela": 32,
+    "kind": "cue",
+    "title": "Pausa",
+    "text": "A seguir: Bloco 05 · Inteligência artificial."
+   },
+   {
+    "kind": "block",
+    "id": "b5",
+    "block": 5,
+    "label": "Bloco 05",
+    "title": "Inteligência artificial"
+   },
+   {
+    "id": "t33",
+    "tela": 33,
+    "kind": "fala",
+    "title": "Bloco 05 · Inteligência artificial",
+    "say": [
+     "Bloco 5: Inteligência artificial",
+     "Ferramenta, não fonte. Ela não ora, não ama e não substitui a Palavra, o Espírito nem a comunidade."
+    ]
+   },
+   {
+    "id": "t34",
+    "tela": 34,
+    "kind": "ask",
+    "title": "O que é a IA",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "O que é a IA, de forma simples? Ela pensa ou entende de verdade? Onde ela costuma errar?"
+   },
+   {
+    "id": "t35",
+    "tela": 35,
+    "kind": "cue",
+    "title": "A próxima palavra",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t36",
+    "tela": 36,
+    "kind": "cue",
+    "title": "Confiante e errada",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t37",
+    "tela": 37,
+    "kind": "ask",
+    "title": "De onde vem a resposta",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "Quando alguém pergunta sobre a Bíblia para uma IA, de onde vem a resposta? Dá para confiar?"
+   },
+   {
+    "id": "t38",
+    "tela": 38,
+    "kind": "cue",
+    "title": "O contexto muda a resposta",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t39",
+    "tela": 39,
+    "kind": "cue",
+    "title": "Insistir para entender",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t40",
+    "tela": 40,
+    "kind": "cue",
+    "title": "Modelo de instrução",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t41",
+    "tela": 41,
+    "kind": "cue",
+    "title": "Texto difícil: Mateus 28.19",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t42",
+    "tela": 42,
+    "kind": "cue",
+    "title": "A Trindade, de forma simples",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t43",
+    "tela": 43,
+    "kind": "cue",
+    "title": "Imagens para entender",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t44",
+    "tela": 44,
+    "kind": "cue",
+    "title": "Cuidados ao usar a IA",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t45",
+    "tela": 45,
+    "kind": "ask",
+    "title": "Ferramenta ou terceirização?",
+    "to": "M",
+    "toLabel": "Para o Martinho",
+    "q": "A IA pode ajudar a igreja no estudo, no preparo e na organização. Onde está o limite entre usar uma ferramenta e terceirizar a busca por Deus?"
+   },
+   {
+    "id": "t46",
+    "tela": 46,
+    "kind": "ask",
+    "title": "Desabafar com uma IA",
+    "to": "A",
+    "toLabel": "Para os dois",
+    "q": "Muita gente já desabafa e pede conselho para IA em vez de falar com pessoas. O que isso revela sobre a nossa geração, e qual é o risco?"
+   },
+   {
+    "id": "t47",
+    "tela": 47,
+    "kind": "ask",
+    "title": "Oração escrita por IA?",
+    "to": "M",
+    "toLabel": "Para o Martinho",
+    "q": "Uma oração ou um devocional escrito por IA tem valor? O que falta ali que a Bíblia considera essencial?"
+   },
+   {
+    "id": "t48",
+    "tela": 48,
+    "kind": "cue",
+    "title": "Frase do bloco 5",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t49",
+    "tela": 49,
+    "kind": "verses",
+    "title": "Textos de apoio",
+    "verses": [
+     {
+      "ref": "Tiago 1.5",
+      "text": "Se algum de vocês tem falta de sabedoria, peça-a a Deus, que a todos dá livremente, de boa vontade; e lhe será concedida."
+     },
+     {
+      "ref": "João 14.26",
+      "text": "Mas o Conselheiro, o Espírito Santo, que o Pai enviará em meu nome, lhes ensinará todas as coisas e lhes fará lembrar tudo o que eu lhes disse."
+     },
+     {
+      "ref": "Provérbios 3.5-6",
+      "text": "Confie no Senhor de todo o seu coração e não se apoie em seu próprio entendimento; reconheça o Senhor em todos os seus caminhos, e ele endireitará as suas veredas."
+     }
+    ],
+    "text": "Cada → mostra o próximo versículo; ← volta um. Quem for ler, lê com calma."
+   },
+   {
+    "id": "t50",
+    "tela": 50,
+    "kind": "cue",
+    "title": "Pausa",
+    "text": "A seguir: Bloco 06 · Presença."
+   },
+   {
+    "kind": "block",
+    "id": "b6",
+    "block": 6,
+    "label": "Bloco 06",
+    "title": "Presença"
+   },
+   {
+    "id": "t51",
+    "tela": 51,
+    "kind": "fala",
+    "title": "Bloco 06 · Presença",
+    "say": [
+     "Bloco 6: Presença",
+     "O que nenhuma tela entrega. Deus não mandou só uma mensagem: Ele veio em pessoa."
+    ]
+   },
+   {
+    "id": "t52",
+    "tela": 52,
+    "kind": "ask",
+    "title": "Conectados e sozinhos",
+    "to": "A",
+    "toLabel": "Para os dois",
+    "q": "Nunca estivemos tão conectados, e a solidão só cresce. Por que a conexão digital não preenche?"
+   },
+   {
+    "id": "t53",
+    "tela": 53,
+    "kind": "ask",
+    "title": "O Verbo se fez carne",
+    "to": "M",
+    "toLabel": "Para o Martinho",
+    "q": "Deus poderia ter mandado só uma mensagem, mas veio em carne e osso. O que a encarnação ensina sobre a igreja num tempo em que tudo é online? O culto online substitui o presencial?"
+   },
+   {
+    "id": "t54",
+    "tela": 54,
+    "kind": "ask",
+    "title": "Alcance ≠ fidelidade",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "Como a igreja pode usar as redes para alcançar pessoas sem virar marketing ou disputa por engajamento?"
+   },
+   {
+    "id": "t55",
+    "tela": 55,
+    "kind": "verses",
+    "title": "Textos de apoio",
+    "verses": [
+     {
+      "ref": "João 1.14",
+      "text": "Aquele que é a Palavra tornou-se carne e viveu entre nós. Vimos a sua glória, glória como do Unigênito vindo do Pai, cheio de graça e de verdade."
+     },
+     {
+      "ref": "Hebreus 10.24-25",
+      "text": "E consideremo-nos uns aos outros para nos incentivarmos ao amor e às boas obras. Não deixemos de reunir-nos como igreja, segundo o costume de alguns, mas procuremos encorajar-nos uns aos outros, ainda mais quando vocês veem que se aproxima o Dia."
+     },
+     {
+      "ref": "Atos 2.42",
+      "text": "Eles se dedicavam ao ensino dos apóstolos e à comunhão, ao partir do pão e às orações."
+     }
+    ],
+    "text": "Cada → mostra o próximo versículo; ← volta um. Quem for ler, lê com calma."
+   },
+   {
+    "id": "t56",
+    "tela": 56,
+    "kind": "cue",
+    "title": "Pausa",
+    "text": "A seguir: Fechamento · Usar sem ser usado."
+   },
+   {
+    "kind": "block",
+    "id": "b7",
+    "block": 7,
+    "label": "Fechamento",
+    "title": "Usar sem ser usado"
+   },
+   {
+    "id": "t57",
+    "tela": 57,
+    "kind": "fala",
+    "title": "Fechamento · Usar sem ser usado",
+    "say": [
+     "Fechamento: Usar sem ser usado",
+     "Seguir Jesus no mundo digital, sem fugir dele e sem ser engolido por ele."
+    ]
+   },
+   {
+    "id": "t58",
+    "tela": 58,
+    "kind": "ask",
+    "title": "Cinco atitudes",
+    "to": "G",
+    "toLabel": "Para o Gabriel",
+    "q": "Que atitudes práticas ajudam alguém a usar a tecnologia sem ser dominado por ela?"
+   },
+   {
+    "id": "t59",
+    "tela": 59,
+    "kind": "cue",
+    "title": "Limpe o seu algoritmo",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t60",
+    "tela": 60,
+    "kind": "cue",
+    "title": "Renove o seu algoritmo",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t61",
+    "tela": 61,
+    "kind": "ask",
+    "title": "O primeiro celular",
+    "to": "A",
+    "toLabel": "Para os dois",
+    "q": "Que conselho a igreja daria a um adolescente que acabou de ganhar o primeiro celular?"
+   },
+   {
+    "id": "t62",
+    "tela": 62,
+    "kind": "ask",
+    "title": "Nem fugir, nem ser engolido",
+    "to": "M",
+    "toLabel": "Para o Martinho",
+    "q": "Como seguir Jesus neste mundo digital sem fugir dele e sem ser engolido por ele?"
+   },
+   {
+    "id": "t63",
+    "tela": 63,
+    "kind": "verses",
+    "title": "Textos de apoio",
+    "verses": [
+     {
+      "ref": "Romanos 12.2",
+      "text": "Não se amoldem ao padrão deste mundo, mas transformem-se pela renovação da sua mente, para que sejam capazes de experimentar e comprovar a boa, agradável e perfeita vontade de Deus."
+     },
+     {
+      "ref": "Filipenses 4.8",
+      "text": "Finalmente, irmãos, tudo o que for verdadeiro, tudo o que for nobre, tudo o que for correto, tudo o que for puro, tudo o que for amável, tudo o que for de boa fama, se houver algo de excelente ou digno de louvor, pensem nessas coisas."
+     }
+    ],
+    "text": "Cada → mostra o próximo versículo; ← volta um. Quem for ler, lê com calma."
+   },
+   {
+    "id": "t64",
+    "tela": 64,
+    "kind": "cue",
+    "title": "Fala final",
+    "text": "O Gabriel continua. Aguarde e avance a tela quando ele pedir."
+   },
+   {
+    "id": "t65",
+    "tela": 65,
+    "kind": "fala",
+    "title": "Perguntas da plateia",
+    "say": [
+     "Agora o espaço é de vocês.",
+     "Quem tiver uma pergunta, pode levantar a mão.",
+     "Pode ser para o Martinho, para o Gabriel ou para os dois."
+    ],
+    "tip": "Jonatas conduz as perguntas. Se alguém perguntar algo de um bloco específico, aperte O e pule direto para a cena."
+   },
+   {
+    "id": "t66",
+    "tela": 66,
+    "kind": "fala",
+    "title": "Encerramento",
+    "say": [
+     "Obrigado por terem vindo!",
+     "Que Deus abençoe cada um de vocês.",
+     "(Avisos finais, se houver.)"
+    ]
+   },
+   {
+    "id": "t67",
+    "tela": 67,
+    "kind": "cue",
+    "title": "Pausa · logo",
+    "text": "Encerramento. Deixe a logo rodando."
+   }
+  ],
+  "martinho": [
+   {
+    "kind": "block",
+    "id": "b0",
+    "block": 0,
+    "label": "Abertura",
+    "title": "Abertura"
+   },
+   {
+    "kind": "block",
+    "id": "b1",
+    "block": 1,
+    "label": "Bloco 01",
+    "title": "Quem te forma?"
+   },
+   {
+    "id": "t7",
+    "tela": 7,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "Antes de explicar como funciona: onde está o algoritmo?"
+   },
+   {
+    "id": "t8",
+    "tela": 8,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "Na prática, como o algoritmo decide o que chega até nós? E por que o objetivo dele é o nosso tempo de tela, e não o nosso bem?"
+   },
+   {
+    "id": "t9",
+    "tela": 9,
+    "kind": "card",
+    "both": false,
+    "title": "A tecnologia é neutra?",
+    "q": "Muita gente diz que a tecnologia é neutra e que tudo depende de como se usa. Essa ideia se sustenta biblicamente?",
+    "say": [
+     "Tecnologia faz parte do mandato cultural: Deus mandou cultivar e desenvolver a criação (Gênesis 1.28; 2.15). Ferramentas são dons da graça comum.",
+     "Mas nenhum produto é neutro no propósito: quem desenha um app coloca nele um objetivo. Nas redes, o objetivo é prender a atenção.",
+     "E quem usa a ferramenta é um coração que precisa ser guardado (Marcos 7.21-23).",
+     "Conclusão: a ferramenta pode ser boa; o uso pede discernimento (1 Coríntios 10.23)."
+    ],
+    "tip": "Pontos de apoio sugeridos. Edite à vontade."
+   },
+   {
+    "id": "t10",
+    "tela": 10,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "O algoritmo manipula as pessoas ou só entrega o que elas já procuram? Onde fica a responsabilidade de cada um?"
+   },
+   {
+    "id": "t11",
+    "tela": 11,
+    "kind": "card",
+    "both": false,
+    "title": "O coração é enganoso",
+    "q": "Se o coração é enganoso e o algoritmo aprende com os nossos desejos, ele acaba alimentando o que há de pior em nós?",
+    "say": [
+     "O algoritmo aprende com os nossos desejos, e o coração, sem Deus, deseja mal (Jeremias 17.9-10).",
+     "Tiago mostra o caminho: o desejo alimentado gera o pecado (Tiago 1.14-15). O algoritmo pode ser esse \"alimento\" constante.",
+     "A boa notícia: Deus dá um coração novo (Ezequiel 36.26) e o Espírito produz domínio próprio (Gálatas 5.22-23)."
+    ],
+    "tip": "Pontos de apoio sugeridos. Edite à vontade."
+   },
+   {
+    "id": "t12",
+    "tela": 12,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "Mateus 6.21",
+      "text": "Pois onde estiver o seu tesouro, aí também estará o seu coração."
+     },
+     {
+      "ref": "Jeremias 17.9",
+      "text": "O coração é mais enganoso que qualquer outra coisa e sua doença é incurável. Quem é capaz de compreendê-lo?"
+     },
+     {
+      "ref": "Provérbios 4.23",
+      "text": "Acima de tudo, guarde o seu coração, pois dele depende toda a sua vida."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b2",
+    "block": 2,
+    "label": "Bloco 02",
+    "title": "A guerra pela atenção"
+   },
+   {
+    "id": "t15",
+    "tela": 15,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "Rolagem infinita, notificações, vídeos curtos: que recursos são pensados para prender a atenção, e por que funcionam tão bem?"
+   },
+   {
+    "id": "t16",
+    "tela": 16,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "Vício em tela é exagero ou é real? Onde fica a linha entre uso intenso e dependência?"
+   },
+   {
+    "id": "t17",
+    "tela": 17,
+    "kind": "card",
+    "both": false,
+    "title": "Uma geração distraída consegue orar?",
+    "q": "Uma geração que não consegue se concentrar consegue orar, ler a Bíblia e ouvir uma pregação? A Bíblia valoriza o silêncio e o descanso: o que acontece com a fé quando nunca mais ficamos a sós com Deus?",
+    "say": [
+     "Oração e leitura exigem atenção. No Getsêmani, os discípulos não conseguiram vigiar nem uma hora (Mateus 26.40-41).",
+     "Jesus ensina a entrar no quarto e fechar a porta (Mateus 6.6): um lugar sem distrações.",
+     "O silêncio não é vazio; é espaço para ouvir Deus (Salmo 46.10; Salmo 1.2, meditar dia e noite).",
+     "Prático: horário fixo, celular fora do quarto, notificações desligadas no tempo com Deus."
+    ],
+    "tip": "Pontos de apoio sugeridos. Edite à vontade."
+   },
+   {
+    "id": "t18",
+    "tela": 18,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "Lucas 5.16",
+      "text": "Mas Jesus retirava-se para lugares solitários, e orava."
+     },
+     {
+      "ref": "Salmos 46.10",
+      "text": "Parem de lutar! Saibam que eu sou Deus! Serei exaltado entre as nações, serei exaltado na terra."
+     },
+     {
+      "ref": "1 Coríntios 6.12",
+      "text": "“Tudo me é permitido”, mas nem tudo convém. “Tudo me é permitido”, mas eu não deixarei que nada me domine."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b3",
+    "block": 3,
+    "label": "Bloco 03",
+    "title": "O feed que diz quem você é"
+   },
+   {
+    "id": "t21",
+    "tela": 21,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "Filtro, edição, ângulo, luz: quanto do que aparece nas redes é real e quanto é produzido? E como isso afeta quem só consome?"
+   },
+   {
+    "id": "t22",
+    "tela": 22,
+    "kind": "card",
+    "both": true,
+    "title": "Postar o que vive?",
+    "q": "A geração das redes vive para postar ou posta o que vive? Até a fé corre o risco de virar vitrine?",
+    "say": [
+     "Jesus alerta contra praticar a fé para ser visto (Mateus 6.1-6).",
+     "Testemunhar é bom; buscar aplauso com a fé é outra coisa.",
+     "Pergunta para a plateia: \"eu continuaria praticando a minha fé se ninguém pudesse ver?\""
+    ],
+    "tip": "Pergunta para você e o Gabriel. Os pontos abaixo são sugestões."
+   },
+   {
+    "id": "t23",
+    "tela": 23,
+    "kind": "card",
+    "both": false,
+    "title": "Seu valor já foi definido",
+    "q": "As redes ensinam a medir valor por curtidas e seguidores. Qual é o contraponto do evangelho sobre a nossa identidade? E o que a Bíblia diz para quem sai das redes se sentindo menor?",
+    "say": [
+     "Fomos criados à imagem de Deus (Gênesis 1.27) e, em Cristo, adotados como filhos (Efésios 1.5; 1 João 3.1).",
+     "Somos aceitos pela graça, não por desempenho (Efésios 2.8-10). Nenhuma curtida acrescenta ou tira isso.",
+     "Comparação gera inveja (Gálatas 5.26). O antídoto bíblico é o contentamento (Filipenses 4.11-13).",
+     "Para quem sai das redes se sentindo menor: Deus olha o coração (1 Samuel 16.7) e nos formou com cuidado (Salmo 139.13-14)."
+    ],
+    "tip": "Pontos de apoio sugeridos. Edite à vontade."
+   },
+   {
+    "id": "t24",
+    "tela": 24,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "1 Samuel 16.7",
+      "text": "O Senhor não vê como o homem: o homem vê a aparência, mas o Senhor vê o coração."
+     },
+     {
+      "ref": "Efésios 2.10",
+      "text": "Porque somos criação de Deus realizada em Cristo Jesus para fazermos boas obras, as quais Deus preparou antes para nós as praticarmos."
+     },
+     {
+      "ref": "Gálatas 1.10",
+      "text": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se eu ainda estivesse procurando agradar a homens, não seria servo de Cristo."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b4",
+    "block": 4,
+    "label": "Bloco 04",
+    "title": "Verdade sob medida"
+   },
+   {
+    "id": "t27",
+    "tela": 27,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "O que são as bolhas, e por que duas pessoas veem mundos completamente diferentes no mesmo app?"
+   },
+   {
+    "id": "t28",
+    "tela": 28,
+    "kind": "card",
+    "both": false,
+    "title": "Teologia em cortes",
+    "q": "Muita gente hoje aprende teologia por cortes de um minuto. Isso aproxima as pessoas da Palavra ou empobrece a fé?",
+    "say": [
+     "Cortes podem despertar interesse, mas a fé amadurece com \"toda a Escritura\" (2 Timóteo 3.16-17), não com frases soltas.",
+     "Corte tira do contexto; o risco é ser levado \"por todo vento de doutrina\" (Efésios 4.14).",
+     "O caminho: conferir como os bereanos (Atos 17.11) e ter ensino ordenado na igreja local."
+    ],
+    "tip": "Pontos de apoio sugeridos. Edite à vontade."
+   },
+   {
+    "id": "t29",
+    "tela": 29,
+    "kind": "card",
+    "both": true,
+    "title": "Polêmica engaja",
+    "q": "Por que briga e polêmica entre cristãos engajam mais do que conteúdo que edifica? O que isso diz sobre nós?",
+    "say": [
+     "Briga gera reação, e reação é o que o algoritmo mede. Ele não distingue edificação de indignação.",
+     "\"Sem lenha a fogueira se apaga\" (Provérbios 26.20-21): não alimentar a contenda.",
+     "Pronto para ouvir, tardio para falar e para se irar (Tiago 1.19-20); palavras que edificam (Efésios 4.29)."
+    ],
+    "tip": "Pergunta para você e o Gabriel. Os pontos abaixo são sugestões."
+   },
+   {
+    "id": "t30",
+    "tela": 30,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "Com vídeos, fotos e vozes falsos criados por IA, como reconhecer o que é verdade antes de compartilhar?"
+   },
+   {
+    "id": "t31",
+    "tela": 31,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "2 Timóteo 4.3-4",
+      "text": "Pois virá o tempo em que não suportarão a sã doutrina; ao contrário, sentindo coceira nos ouvidos, juntarão mestres para si mesmos, segundo os seus próprios desejos. Eles se recusarão a dar ouvidos à verdade, voltando-se para os mitos."
+     },
+     {
+      "ref": "Atos 17.11",
+      "text": "Os bereanos eram mais nobres do que os tessalonicenses, pois receberam a mensagem com grande interesse, examinando todos os dias as Escrituras, para ver se tudo era assim mesmo."
+     },
+     {
+      "ref": "Provérbios 18.17",
+      "text": "O primeiro a apresentar a sua causa parece ter razão, até que outro venha à frente e o questione."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b5",
+    "block": 5,
+    "label": "Bloco 05",
+    "title": "Inteligência artificial"
+   },
+   {
+    "id": "t34",
+    "tela": 34,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "O que é a IA, de forma simples? Ela pensa ou entende de verdade? Onde ela costuma errar?"
+   },
+   {
+    "id": "t37",
+    "tela": 37,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "Quando alguém pergunta sobre a Bíblia para uma IA, de onde vem a resposta? Dá para confiar?"
+   },
+   {
+    "id": "t45",
+    "tela": 45,
+    "kind": "card",
+    "both": false,
+    "title": "Ferramenta ou terceirização?",
+    "q": "A IA pode ajudar a igreja no estudo, no preparo e na organização. Onde está o limite entre usar uma ferramenta e terceirizar a busca por Deus?",
+    "say": [
+     "Ferramenta ajuda a entender; terceirizar é deixar de ler, orar e meditar por conta própria.",
+     "É possível conhecer as Escrituras e não vir a Cristo (João 5.39-40): conhecimento sem relacionamento.",
+     "Quem ilumina a Palavra é o Espírito (1 Coríntios 2.12-14). A IA explica; não ilumina o coração.",
+     "Teste prático: a ferramenta me levou de volta à Bíblia e à oração, ou ficou no lugar delas?"
+    ],
+    "tip": "Pontos de apoio sugeridos. Edite à vontade."
+   },
+   {
+    "id": "t46",
+    "tela": 46,
+    "kind": "card",
+    "both": true,
+    "title": "Desabafar com uma IA",
+    "q": "Muita gente já desabafa e pede conselho para IA em vez de falar com pessoas. O que isso revela sobre a nossa geração, e qual é o risco?",
+    "say": [
+     "A IA responde, mas não caminha com você: não visita, não ora por você, não te conhece na igreja.",
+     "Fomos feitos para carregar os fardos uns dos outros (Gálatas 6.2).",
+     "Use a ferramenta, mas procure pessoas de confiança, o pastor e cristãos maduros."
+    ],
+    "tip": "Pergunta para você e o Gabriel. Os pontos abaixo são sugestões."
+   },
+   {
+    "id": "t47",
+    "tela": 47,
+    "kind": "card",
+    "both": false,
+    "title": "Oração escrita por IA?",
+    "q": "Uma oração ou um devocional escrito por IA tem valor? O que falta ali que a Bíblia considera essencial?",
+    "say": [
+     "Oração é conversa de filho com o Pai: \"Aba, Pai\" (Romanos 8.15).",
+     "Deus quer o coração, não palavras bonitas (Mateus 6.7; Isaías 29.13).",
+     "A IA não tem fé nem coração. Pode servir como ponto de partida para pensar, mas falta o essencial: sinceridade, fé e o Espírito que intercede por nós (Romanos 8.26)."
+    ],
+    "tip": "Pontos de apoio sugeridos. Edite à vontade."
+   },
+   {
+    "id": "t49",
+    "tela": 49,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "Tiago 1.5",
+      "text": "Se algum de vocês tem falta de sabedoria, peça-a a Deus, que a todos dá livremente, de boa vontade; e lhe será concedida."
+     },
+     {
+      "ref": "João 14.26",
+      "text": "Mas o Conselheiro, o Espírito Santo, que o Pai enviará em meu nome, lhes ensinará todas as coisas e lhes fará lembrar tudo o que eu lhes disse."
+     },
+     {
+      "ref": "Provérbios 3.5-6",
+      "text": "Confie no Senhor de todo o seu coração e não se apoie em seu próprio entendimento; reconheça o Senhor em todos os seus caminhos, e ele endireitará as suas veredas."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b6",
+    "block": 6,
+    "label": "Bloco 06",
+    "title": "Presença"
+   },
+   {
+    "id": "t52",
+    "tela": 52,
+    "kind": "card",
+    "both": true,
+    "title": "Conectados e sozinhos",
+    "q": "Nunca estivemos tão conectados, e a solidão só cresce. Por que a conexão digital não preenche?",
+    "say": [
+     "\"Não é bom que o homem esteja só\" (Gênesis 2.18): fomos criados para comunhão.",
+     "Conexão digital entrega informação; presença entrega cuidado.",
+     "A igreja é família (Efésios 2.19): lugar de ser conhecido de verdade."
+    ],
+    "tip": "Pergunta para você e o Gabriel. Os pontos abaixo são sugestões."
+   },
+   {
+    "id": "t53",
+    "tela": 53,
+    "kind": "card",
+    "both": false,
+    "title": "O Verbo se fez carne",
+    "q": "Deus poderia ter mandado só uma mensagem, mas veio em carne e osso. O que a encarnação ensina sobre a igreja num tempo em que tudo é online? O culto online substitui o presencial?",
+    "say": [
+     "Deus não mandou só uma mensagem: Ele veio em carne (João 1.14). A encarnação valoriza a presença.",
+     "Batismo e Ceia são vividos com o corpo, reunidos (1 Coríntios 11.20,33: \"quando vocês se reúnem\").",
+     "O culto online serve a doentes, viajantes e como ponte para quem ainda não vem. Mas não substitui a comunhão (Hebreus 10.24-25).",
+     "Até o apóstolo preferia o face a face: \"espero visitá-los e falar com vocês face a face\" (2 João 12)."
+    ],
+    "tip": "Pontos de apoio sugeridos. Edite à vontade."
+   },
+   {
+    "id": "t54",
+    "tela": 54,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "Como a igreja pode usar as redes para alcançar pessoas sem virar marketing ou disputa por engajamento?"
+   },
+   {
+    "id": "t55",
+    "tela": 55,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "João 1.14",
+      "text": "Aquele que é a Palavra tornou-se carne e viveu entre nós. Vimos a sua glória, glória como do Unigênito vindo do Pai, cheio de graça e de verdade."
+     },
+     {
+      "ref": "Hebreus 10.24-25",
+      "text": "E consideremo-nos uns aos outros para nos incentivarmos ao amor e às boas obras. Não deixemos de reunir-nos como igreja, segundo o costume de alguns, mas procuremos encorajar-nos uns aos outros, ainda mais quando vocês veem que se aproxima o Dia."
+     },
+     {
+      "ref": "Atos 2.42",
+      "text": "Eles se dedicavam ao ensino dos apóstolos e à comunhão, ao partir do pão e às orações."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b7",
+    "block": 7,
+    "label": "Fechamento",
+    "title": "Usar sem ser usado"
+   },
+   {
+    "id": "t58",
+    "tela": 58,
+    "kind": "ref",
+    "who": "Gabriel",
+    "text": "Que atitudes práticas ajudam alguém a usar a tecnologia sem ser dominado por ela?"
+   },
+   {
+    "id": "t61",
+    "tela": 61,
+    "kind": "card",
+    "both": true,
+    "title": "O primeiro celular",
+    "q": "Que conselho a igreja daria a um adolescente que acabou de ganhar o primeiro celular?",
+    "say": [
+     "Combinar regras em família: horários, lugares sem celular (quarto à noite), apps permitidos.",
+     "Acompanhar e conversar, sem só proibir (Provérbios 22.6; Efésios 6.4).",
+     "Ensinar a usar para o bem desde o início: limites, verificação, conteúdo que edifica."
+    ],
+    "tip": "Pergunta para você e o Gabriel. Os pontos abaixo são sugestões."
+   },
+   {
+    "id": "t62",
+    "tela": 62,
+    "kind": "card",
+    "both": false,
+    "title": "Nem fugir, nem ser engolido",
+    "q": "Como seguir Jesus neste mundo digital sem fugir dele e sem ser engolido por ele?",
+    "say": [
+     "Jesus não pediu que fôssemos tirados do mundo, mas protegidos do Maligno (João 17.15-18).",
+     "Estar no mundo sem ser moldado por ele (Romanos 12.2).",
+     "Somos sal e luz (Mateus 5.13-16): presença que faz diferença, inclusive no digital."
+    ],
+    "tip": "Pontos de apoio sugeridos. Edite à vontade."
+   },
+   {
+    "id": "t63",
+    "tela": 63,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "Romanos 12.2",
+      "text": "Não se amoldem ao padrão deste mundo, mas transformem-se pela renovação da sua mente, para que sejam capazes de experimentar e comprovar a boa, agradável e perfeita vontade de Deus."
+     },
+     {
+      "ref": "Filipenses 4.8",
+      "text": "Finalmente, irmãos, tudo o que for verdadeiro, tudo o que for nobre, tudo o que for correto, tudo o que for puro, tudo o que for amável, tudo o que for de boa fama, se houver algo de excelente ou digno de louvor, pensem nessas coisas."
+     }
+    ]
+   }
+  ],
+  "gabriel": [
+   {
+    "kind": "block",
+    "id": "b0",
+    "block": 0,
+    "label": "Abertura",
+    "title": "Abertura"
+   },
+   {
+    "id": "t3",
+    "tela": 3,
+    "kind": "ref",
+    "who": "Jonatas",
+    "text": "Quem conversa hoje"
+   },
+   {
+    "id": "t4",
+    "tela": 4,
+    "kind": "ref",
+    "who": "Jonatas",
+    "text": "A ideia do encontro"
+   },
+   {
+    "kind": "block",
+    "id": "b1",
+    "block": 1,
+    "label": "Bloco 01",
+    "title": "Quem te forma?"
+   },
+   {
+    "id": "t7",
+    "tela": 7,
+    "kind": "card",
+    "both": false,
+    "title": "Está em tudo",
+    "q": "Antes de explicar como funciona: onde está o algoritmo?",
+    "say": [
+     "Algoritmo não é coisa só do Instagram. Ele está em todos os apps: YouTube, TikTok, Netflix, Spotify, Google, até no app de compras e de delivery.",
+     "E hoje quase todos usam inteligência artificial para isso. A IA também está em tudo.",
+     "Ele está o tempo todo indicando. E indica sempre aquilo que a gente já gosta. Quanto mais a gente usa, mais ele acerta, e mais a gente fica."
+    ],
+    "bridge": "",
+    "tip": ""
+   },
+   {
+    "id": "t8",
+    "tela": 8,
+    "kind": "card",
+    "both": false,
+    "title": "Como o algoritmo decide",
+    "q": "Na prática, como o algoritmo decide o que chega até nós? E por que o objetivo dele é o nosso tempo de tela, e não o nosso bem?",
+    "say": [
+     "O algoritmo não precisa te conhecer profundamente para te influenciar. Basta perceber padrões no que você faz.",
+     "Você assiste até o fim, volta um trecho, curte, comenta, ou só para três segundos num vídeo. Cada uma dessas coisas é um sinal.",
+     "Com esses sinais, ele calcula o que tem mais chance de te prender, e te entrega mais disso.",
+     "Muitas plataformas ganham dinheiro com publicidade. Quanto mais tempo a gente fica, mais elas ganham. Por isso o alvo é o nosso tempo.",
+     "Só que o que prende a atenção não é necessariamente o que faz bem. Uma discussão inútil prende tanto quanto um vídeo que edifica.",
+     "Para o algoritmo, engajamento é sucesso. Para o cristão, a pergunta é outra: isso está me edificando?"
+    ],
+    "bridge": "Mateus 6.21 e Provérbios 4.23: aquilo que ocupa a nossa atenção e os nossos desejos precisa ser examinado.",
+    "tip": ""
+   },
+   {
+    "id": "t9",
+    "tela": 9,
+    "kind": "ref",
+    "who": "Martinho",
+    "text": "Muita gente diz que a tecnologia é neutra e que tudo depende de como se usa. Essa ideia se sustenta biblicamente?"
+   },
+   {
+    "id": "t10",
+    "tela": 10,
+    "kind": "card",
+    "both": false,
+    "title": "Manipula ou entrega?",
+    "q": "O algoritmo manipula as pessoas ou só entrega o que elas já procuram? Onde fica a responsabilidade de cada um?",
+    "say": [
+     "Eu diria que as duas coisas acontecem.",
+     "Muitas vezes a gente entra procurando algo específico. Ele observa e começa a sugerir coisas parecidas, e a gente fica circulando dentro daquele universo.",
+     "Vira um ciclo: eu consumo, ele recomenda mais, eu vejo aquilo cada vez mais, e começo a achar que aquilo é o mundo inteiro.",
+     "Mas não dá para jogar toda a culpa no algoritmo. Nós também somos responsáveis pelo que buscamos, alimentamos e compartilhamos.",
+     "E reconhecer a nossa responsabilidade não significa ignorar a influência que as plataformas exercem sobre nós."
+    ],
+    "bridge": "Jeremias 17.9: a tecnologia pode explorar os nossos desejos, mas o problema não começou com ela. Começou no coração.",
+    "tip": ""
+   },
+   {
+    "id": "t11",
+    "tela": 11,
+    "kind": "ref",
+    "who": "Martinho",
+    "text": "Se o coração é enganoso e o algoritmo aprende com os nossos desejos, ele acaba alimentando o que há de pior em nós?"
+   },
+   {
+    "id": "t12",
+    "tela": 12,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "Mateus 6.21",
+      "text": "Pois onde estiver o seu tesouro, aí também estará o seu coração."
+     },
+     {
+      "ref": "Jeremias 17.9",
+      "text": "O coração é mais enganoso que qualquer outra coisa e sua doença é incurável. Quem é capaz de compreendê-lo?"
+     },
+     {
+      "ref": "Provérbios 4.23",
+      "text": "Acima de tudo, guarde o seu coração, pois dele depende toda a sua vida."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b2",
+    "block": 2,
+    "label": "Bloco 02",
+    "title": "A guerra pela atenção"
+   },
+   {
+    "id": "t15",
+    "tela": 15,
+    "kind": "card",
+    "both": false,
+    "title": "Feito para prender",
+    "q": "Rolagem infinita, notificações, vídeos curtos: que recursos são pensados para prender a atenção, e por que funcionam tão bem?",
+    "say": [
+     "Reprodução automática, rolagem infinita, notificações, recomendação contínua.",
+     "Todos esses recursos têm algo em comum: eles tiram de nós o momento de decidir se queremos continuar.",
+     "Você termina um vídeo e outro já começou. Chega uma notificação e você sente que precisa conferir. Abre o celular para responder uma mensagem e, quando percebe, passou meia hora.",
+     "O problema não é que todo vídeo curto seja ruim. É quando a gente deixa de escolher o que faz com o próprio tempo."
+    ],
+    "bridge": "",
+    "tip": ""
+   },
+   {
+    "id": "t16",
+    "tela": 16,
+    "kind": "card",
+    "both": false,
+    "title": "Uso ou dependência?",
+    "q": "Vício em tela é exagero ou é real? Onde fica a linha entre uso intenso e dependência?",
+    "say": [
+     "Eu não chamaria qualquer uso frequente de dependência. Precisamos olhar para os efeitos.",
+     "A pessoa tenta parar e não consegue? Isso prejudica o sono, as responsabilidades, os relacionamentos, o tempo com Deus?",
+     "Talvez a pergunta mais útil seja: eu consigo usar e deixar de lado quando preciso? Ou ele já está controlando as minhas escolhas?",
+     "Paulo escreve em 1 Coríntios 6.12: “nem tudo convém… eu não deixarei que nada me domine”.",
+     "Na prática: veja o seu tempo de tela, desligue as notificações desnecessárias e separe momentos sem o celular para orar, ler e estar com pessoas."
+    ],
+    "bridge": "Lucas 5.16: Jesus se retirava para lugares solitários e orava. Ponte: a atenção não é só produtividade. Aquilo a que damos atenção muda a forma como nos enxergamos.",
+    "tip": ""
+   },
+   {
+    "id": "t17",
+    "tela": 17,
+    "kind": "ref",
+    "who": "Martinho",
+    "text": "Uma geração que não consegue se concentrar consegue orar, ler a Bíblia e ouvir uma pregação? A Bíblia valoriza o silêncio e o descanso: o que acontece com a fé quando nunca mais ficamos a sós com Deus?"
+   },
+   {
+    "id": "t18",
+    "tela": 18,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "Lucas 5.16",
+      "text": "Mas Jesus retirava-se para lugares solitários, e orava."
+     },
+     {
+      "ref": "Salmos 46.10",
+      "text": "Parem de lutar! Saibam que eu sou Deus! Serei exaltado entre as nações, serei exaltado na terra."
+     },
+     {
+      "ref": "1 Coríntios 6.12",
+      "text": "“Tudo me é permitido”, mas nem tudo convém. “Tudo me é permitido”, mas eu não deixarei que nada me domine."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b3",
+    "block": 3,
+    "label": "Bloco 03",
+    "title": "O feed que diz quem você é"
+   },
+   {
+    "id": "t21",
+    "tela": 21,
+    "kind": "card",
+    "both": false,
+    "title": "Recorte ≠ realidade",
+    "q": "Filtro, edição, ângulo, luz: quanto do que aparece nas redes é real e quanto é produzido? E como isso afeta quem só consome?",
+    "say": [
+     "Uma foto pode registrar um momento real e, mesmo assim, não mostrar a realidade inteira.",
+     "Tem ângulo, luz, edição, a escolha do melhor momento. E hoje, até imagem inteira feita por IA.",
+     "O problema não é postar uma foto bonita. É quando a gente compara a nossa vida inteira com os melhores recortes da vida dos outros.",
+     "Você compara o seu dia comum com as férias de alguém, as suas lutas com as conquistas do outro, o seu corpo real com uma imagem produzida."
+    ],
+    "bridge": "1 Samuel 16.7: o homem vê a aparência, o Senhor vê o coração. Efésios 2.10: a nossa identidade não é construída por curtidas. Ligação com a IA: hoje uma imagem pode existir sem que o fato tenha acontecido. Não basta desconfiar, é preciso verificar.",
+    "tip": ""
+   },
+   {
+    "id": "t22",
+    "tela": 22,
+    "kind": "card",
+    "both": true,
+    "title": "Postar o que vive?",
+    "q": "Ambos: A geração das redes vive para postar ou posta o que vive? Até a fé corre o risco de virar vitrine?",
+    "say": [
+     "Uma pergunta que ajuda: eu continuaria praticando a minha fé se ninguém pudesse ver? (Mateus 6.1-6)",
+     "Testemunhar publicamente é bom. Buscar reconhecimento com a fé é outra coisa."
+    ],
+    "bridge": "",
+    "tip": "Pergunta para os dois."
+   },
+   {
+    "id": "t23",
+    "tela": 23,
+    "kind": "ref",
+    "who": "Martinho",
+    "text": "As redes ensinam a medir valor por curtidas e seguidores. Qual é o contraponto do evangelho sobre a nossa identidade? E o que a Bíblia diz para quem sai das redes se sentindo menor?"
+   },
+   {
+    "id": "t24",
+    "tela": 24,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "1 Samuel 16.7",
+      "text": "O Senhor não vê como o homem: o homem vê a aparência, mas o Senhor vê o coração."
+     },
+     {
+      "ref": "Efésios 2.10",
+      "text": "Porque somos criação de Deus realizada em Cristo Jesus para fazermos boas obras, as quais Deus preparou antes para nós as praticarmos."
+     },
+     {
+      "ref": "Gálatas 1.10",
+      "text": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se eu ainda estivesse procurando agradar a homens, não seria servo de Cristo."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b4",
+    "block": 4,
+    "label": "Bloco 04",
+    "title": "Verdade sob medida"
+   },
+   {
+    "id": "t27",
+    "tela": 27,
+    "kind": "card",
+    "both": false,
+    "title": "Bolhas",
+    "q": "O que são as bolhas, e por que duas pessoas veem mundos completamente diferentes no mesmo app?",
+    "say": [
+     "Imagine duas pessoas usando a mesma rede social. Uma assiste a vídeos de um posicionamento; a outra, ao contrário.",
+     "Com o tempo, cada uma recebe recomendações diferentes, participa de conversas diferentes e fica exposta a argumentos diferentes.",
+     "As duas ficam com a impressão de que todo mundo pensa como elas, porque o que recebem reforça aquilo a que já estão acostumadas.",
+     "Isso também acontece com a fé: dá para consumir só pregadores com quem eu concordo e nunca ouvir uma explicação completa sobre assuntos difíceis.",
+     "O perigo é confundir aquilo que aparece repetidamente na tela com aquilo que é verdade.",
+     "(Só um toque, sem entrar em política) Na política acontece igual: o algoritmo enriquece ainda mais as ideias que a gente já tem e mostra cada vez mais os erros do outro candidato. Resultado: tudo fica mais extremo."
+    ],
+    "bridge": "Atos 17.11: os bereanos examinavam as Escrituras todos os dias para ver se era assim mesmo, inclusive o que combinava com eles.",
+    "tip": ""
+   },
+   {
+    "id": "t28",
+    "tela": 28,
+    "kind": "ref",
+    "who": "Martinho",
+    "text": "Muita gente hoje aprende teologia por cortes de um minuto. Isso aproxima as pessoas da Palavra ou empobrece a fé?"
+   },
+   {
+    "id": "t29",
+    "tela": 29,
+    "kind": "card",
+    "both": true,
+    "title": "Polêmica engaja",
+    "q": "Ambos: Por que briga e polêmica entre cristãos engajam mais do que conteúdo que edifica? O que isso diz sobre nós?",
+    "say": [],
+    "bridge": "",
+    "tip": "Pergunta para os dois."
+   },
+   {
+    "id": "t30",
+    "tela": 30,
+    "kind": "card",
+    "both": false,
+    "title": "Parece real. É real?",
+    "q": "Com vídeos, fotos e vozes falsos criados por IA, como reconhecer o que é verdade antes de compartilhar?",
+    "say": [
+     "Hoje não dá para confiar só porque uma imagem parece real, uma voz parece familiar ou um vídeo parece convincente.",
+     "Quatro perguntas antes de compartilhar: de onde veio? Outras fontes confirmam? Isso me deu raiva ou medo na hora? (É aí que a gente compartilha sem pensar.) E vale mesmo a pena compartilhar?",
+     "Procure a publicação original e fontes independentes.",
+     "E um detalhe: pedir para uma IA verificar ajuda na investigação, mas também não garante a resposta certa."
+    ],
+    "bridge": "Frase: “Na era dos algoritmos, compartilhar sem verificar pode ser espalhar uma mentira. Não basta parecer verdade; precisa ser.” Provérbios 18.17.",
+    "tip": ""
+   },
+   {
+    "id": "t31",
+    "tela": 31,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "2 Timóteo 4.3-4",
+      "text": "Pois virá o tempo em que não suportarão a sã doutrina; ao contrário, sentindo coceira nos ouvidos, juntarão mestres para si mesmos, segundo os seus próprios desejos. Eles se recusarão a dar ouvidos à verdade, voltando-se para os mitos."
+     },
+     {
+      "ref": "Atos 17.11",
+      "text": "Os bereanos eram mais nobres do que os tessalonicenses, pois receberam a mensagem com grande interesse, examinando todos os dias as Escrituras, para ver se tudo era assim mesmo."
+     },
+     {
+      "ref": "Provérbios 18.17",
+      "text": "O primeiro a apresentar a sua causa parece ter razão, até que outro venha à frente e o questione."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b5",
+    "block": 5,
+    "label": "Bloco 05",
+    "title": "Inteligência artificial"
+   },
+   {
+    "id": "t34",
+    "tela": 34,
+    "kind": "card",
+    "both": false,
+    "title": "O que é a IA",
+    "q": "O que é a IA, de forma simples? Ela pensa ou entende de verdade? Onde ela costuma errar?",
+    "say": [
+     "De forma simples: uma IA como o ChatGPT foi treinada lendo uma quantidade enorme de textos: livros, sites, conversas.",
+     "Com isso, ela aprendeu padrões: que palavras costumam vir depois de quais, como uma explicação costuma ser montada.",
+     "E usa esses padrões para gerar respostas, textos e imagens.",
+     "Ela consegue explicar, organizar e comparar ideias. Mas produzir uma resposta convincente não é o mesmo que entender como um ser humano entende.",
+     "Ela não crê, não ora, não ama. É uma ferramenta."
+    ],
+    "bridge": "",
+    "tip": ""
+   },
+   {
+    "id": "t35",
+    "tela": 35,
+    "kind": "card",
+    "both": false,
+    "title": "A próxima palavra",
+    "q": "(continuação) Como ela “pensa”?",
+    "say": [
+     "Por dentro, ela faz basicamente uma coisa: calcula qual é a próxima palavra mais provável.",
+     "“No princípio era o…” Ela calcula: “Verbo” é o mais provável. “O Senhor é o meu…” “pastor”.",
+     "Agora: “Deus ajuda quem cedo…” “madruga”. Soa bíblico, todo mundo já ouviu. Mas não está na Bíblia.",
+     "É isso: o mais provável nem sempre é o verdadeiro."
+    ],
+    "bridge": "",
+    "tip": "As porcentagens são ilustrativas."
+   },
+   {
+    "id": "t36",
+    "tela": 36,
+    "kind": "card",
+    "both": false,
+    "title": "Confiante e errada",
+    "q": "(continuação) Onde ela costuma errar?",
+    "say": [
+     "Ela pode apresentar um erro com muita segurança.",
+     "Neste exemplo, ela “cita” Provérbios 31.33. Só que Provérbios 31 termina no versículo 31.",
+     "Ela pode misturar informações, interpretar mal uma passagem ou citar um versículo que não sustenta o que disse.",
+     "Por isso: confira sempre a referência na sua Bíblia."
+    ],
+    "bridge": "",
+    "tip": "Exemplo montado para ilustrar o tipo de erro."
+   },
+   {
+    "id": "t37",
+    "tela": 37,
+    "kind": "card",
+    "both": false,
+    "title": "De onde vem a resposta",
+    "q": "Quando alguém pergunta sobre a Bíblia para uma IA, de onde vem a resposta? Dá para confiar?",
+    "say": [
+     "A IA não recebe revelação. A resposta vem de três lugares: dos padrões que ela aprendeu no treinamento, do que você escreveu na conversa e, quando existe, de uma busca na internet.",
+     "Então ela pode ser muito útil para estudar a Bíblia, mas também pode reproduzir erros e interpretações sem fundamento.",
+     "E repare: o que você escreve faz parte da resposta. Olhem a diferença…"
+    ],
+    "bridge": "",
+    "tip": ""
+   },
+   {
+    "id": "t38",
+    "tela": 38,
+    "kind": "card",
+    "both": false,
+    "title": "O contexto muda a resposta",
+    "q": "(continuação) A diferença que o contexto faz",
+    "say": [
+     "Mesma pergunta: “Como uma pessoa é salva?”",
+     "Sem contexto, ela tende a responder de forma genérica, tentando agradar todo mundo: “depende da sua crença…”.",
+     "Agora, quando eu digo quem eu sou e o que eu creio (“sou cristão, creio na Trindade, na morte e na ressurreição de Cristo, sou reformado, responda pela Bíblia, com versículos, e não me agrade”), a resposta muda: graça, fé, Cristo, e os versículos de onde isso vem.",
+     "Um cuidado importante: a IA não tem fé. Ela não vira “um cristão verdadeiro”. O que muda é a orientação: ela passa a analisar a partir da tradição reformada.",
+     "E pedir a perspectiva reformada não torna a resposta automaticamente correta. As referências precisam ser conferidas na Bíblia."
+    ],
+    "bridge": "Frase: “O contexto direciona. A Escritura confirma.”",
+    "tip": "As respostas na tela são ilustrativas, para mostrar o contraste."
+   },
+   {
+    "id": "t39",
+    "tela": 39,
+    "kind": "card",
+    "both": false,
+    "title": "Insistir para entender",
+    "q": "(continuação) Como usar bem",
+    "say": [
+     "Outra grande vantagem: você pode insistir. Não entendeu? Peça de outro jeito. Mais simples, depois mais profundo, o contexto histórico, os versículos.",
+     "Mas tem uma diferença enorme entre perguntar “prove que eu estou certo” e “mostre se a minha interpretação se sustenta no texto e quais são as objeções”.",
+     "A primeira busca confirmação. A segunda busca compreensão.",
+     "Insistir para entender é diferente de insistir até a IA concordar comigo.",
+     "Uma pergunta que vale ouro no final: “Revise sua resposta. Alguma afirmação foi além do que a Bíblia diz?”"
+    ],
+    "bridge": "Provérbios 18.17 e Atos 17.11: a ferramenta ajuda na investigação; a Escritura continua sendo o padrão.",
+    "tip": ""
+   },
+   {
+    "id": "t40",
+    "tela": 40,
+    "kind": "card",
+    "both": false,
+    "title": "Modelo de instrução",
+    "q": "(demonstração) Um modelo para usar",
+    "say": [
+     "“Tirem uma foto. Colem isso no começo da conversa com a IA.”",
+     "Leia em voz alta os pontos principais: autoridade final da Escritura, versículos em cada conclusão, contexto, separar texto de interpretação, não concordar só para agradar, não inventar.",
+     "“Esse texto melhora a orientação da conversa, mas não garante resposta certa. A própria resposta precisa ser avaliada.”"
+    ],
+    "bridge": "",
+    "tip": "Esta tela fica parada por mais tempo para dar tempo de fotografar.",
+    "prompt": [
+     "Minha autoridade final é a Escritura, não a sua resposta.",
+     "Cite os versículos que sustentam cada conclusão.",
+     "Explique o contexto histórico, literário e teológico.",
+     "Separe o que o texto afirma do que é interpretação.",
+     "Não concorde comigo só para me agradar.",
+     "Não invente versículos nem citações. Admita quando não souber.",
+     "Termine com a ideia central e a aplicação para hoje."
+    ]
+   },
+   {
+    "id": "t41",
+    "tela": 41,
+    "kind": "card",
+    "both": false,
+    "title": "Texto difícil: Mateus 28.19",
+    "q": "(demonstração) Usar a IA para entender um texto difícil: a Trindade",
+    "say": [
+     "Um exemplo prático. Muita gente tem dificuldade de entender a Trindade. Peça para a IA: “Explique Mateus 28.19 e a Trindade de forma simples, com versículos, e mostre os erros comuns”.",
+     "Repare no detalhe do texto: Jesus manda batizar “em nome”, no singular, e não “nos nomes”. Um só nome: um só Deus.",
+     "E logo depois vêm três: o Pai, o Filho e o Espírito Santo. Três pessoas.",
+     "Um só Deus, em três pessoas. É isso que a igreja confessa desde o começo."
+    ],
+    "bridge": "Confira na Bíblia: Deuteronômio 6.4 (um só Senhor) e Mateus 28.19 (o nome do Pai, do Filho e do Espírito Santo).",
+    "tip": ""
+   },
+   {
+    "id": "t42",
+    "tela": 42,
+    "kind": "card",
+    "both": false,
+    "title": "A Trindade, de forma simples",
+    "q": "(demonstração) A ilustração da Trindade",
+    "say": [
+     "Este desenho é antigo, usado pela igreja há séculos para ensinar a Trindade.",
+     "No centro: Deus. O Pai é Deus. O Filho é Deus. O Espírito Santo é Deus.",
+     "Mas o Pai não é o Filho, o Filho não é o Espírito, o Espírito não é o Pai. São pessoas distintas.",
+     "Não são três deuses. E não é um Deus que muda de “máscara”, ora Pai, ora Filho, ora Espírito.",
+     "Atenção: comparações como água, gelo e vapor, ou o ovo com casca, clara e gema, parecem ajudar, mas ensinam erros antigos (uma pessoa que muda de forma, ou Deus dividido em partes). Uma boa pergunta para a IA é justamente: “Quais erros essa comparação ensina?”"
+    ],
+    "bridge": "Deuteronômio 6.4 · Mateus 28.19 · João 1.1 · Atos 5.3-4 · 2 Coríntios 13.14.",
+    "tip": ""
+   },
+   {
+    "id": "t43",
+    "tela": 43,
+    "kind": "card",
+    "both": false,
+    "title": "Imagens para entender",
+    "q": "(demonstração) Gerar imagens para entender a Bíblia",
+    "say": [
+     "A IA também gera imagens. Isso ajuda a visualizar coisas difíceis de imaginar: o tabernáculo, o templo, Jerusalém no tempo de Jesus, as viagens de Paulo.",
+     "Exemplo: o tabernáculo de Êxodo 25 a 30. Só lendo, é difícil montar na cabeça. Uma ilustração ajuda a entender o pátio, o altar, a bacia, o Lugar Santo e o Santo dos Santos.",
+     "Mas atenção: a imagem é uma reconstrução. Não é foto do passado nem revelação. Ela serve ao texto e nunca o substitui."
+    ],
+    "bridge": "O prompt aparece escrito na tela: “Crie uma ilustração histórica do tabernáculo descrito em Êxodo 25 a 30. Diferencie o que está descrito nas Escrituras do que é reconstrução.”",
+    "tip": ""
+   },
+   {
+    "id": "t44",
+    "tela": 44,
+    "kind": "card",
+    "both": false,
+    "title": "Cuidados ao usar a IA",
+    "q": "Cuidados para tomarmos ao usar a IA",
+    "say": [
+     "1. Não é autoridade: a IA erra com confiança. Toda resposta sobre a Bíblia precisa ser conferida na Bíblia (Atos 17.11).",
+     "2. Proteja os seus dados: o que você digita pode ficar guardado e ser usado para treinar sistemas. Não coloque senhas, documentos, nem segredos, e muito menos a vida de outras pessoas: o problema que um irmão te contou não vai para o chat.",
+     "3. Não use para enganar: entregar trabalho escolar feito pela IA como se fosse seu, criar foto ou voz falsa de alguém, inventar print. Continua sendo mentira (Efésios 4.25).",
+     "4. Decisões sérias, com pessoas: saúde, crise emocional, namoro, carreira, finanças. A IA pode ajudar a organizar o pensamento, mas conselho de verdade vem de gente que te conhece: pastor, família, irmãos maduros, profissionais (Provérbios 15.22).",
+     "5. Não terceirize a sua devoção: a IA pode explicar um texto, mas ler, orar e meditar é você com Deus. Ninguém ora por você no seu lugar.",
+     "6. (Se der tempo) Imagens de Deus e de Jesus: a tradição reformada entende o segundo mandamento como proibição de representar Deus por imagens (Êxodo 20.4). Usar a IA para ilustrar cenários, objetos e mapas bíblicos é diferente de criar imagens de Deus."
+    ],
+    "bridge": "Provérbios 15.22: “Os planos fracassam por falta de conselho, mas são bem-sucedidos quando há muitos conselheiros.” Ponte: a IA pode ser um bom recurso, desde que fique no lugar de ferramenta.",
+    "tip": ""
+   },
+   {
+    "id": "t45",
+    "tela": 45,
+    "kind": "ref",
+    "who": "Martinho",
+    "text": "A IA pode ajudar a igreja no estudo, no preparo e na organização. Onde está o limite entre usar uma ferramenta e terceirizar a busca por Deus?"
+   },
+   {
+    "id": "t46",
+    "tela": 46,
+    "kind": "card",
+    "both": true,
+    "title": "Desabafar com uma IA",
+    "q": "Ambos: Muita gente já desabafa e pede conselho para IA em vez de falar com pessoas. O que isso revela sobre a nossa geração, e qual é o risco?",
+    "say": [
+     "A IA responde, mas não te visita, não ora por você, não te conhece na igreja.",
+     "Use a ferramenta, mas procure pessoas de confiança e cristãos maduros."
+    ],
+    "bridge": "",
+    "tip": "Pergunta para os dois."
+   },
+   {
+    "id": "t47",
+    "tela": 47,
+    "kind": "ref",
+    "who": "Martinho",
+    "text": "Uma oração ou um devocional escrito por IA tem valor? O que falta ali que a Bíblia considera essencial?"
+   },
+   {
+    "id": "t48",
+    "tela": 48,
+    "kind": "card",
+    "both": false,
+    "title": "Frase do bloco 5",
+    "q": "",
+    "say": [
+     "“A inteligência artificial pode nos ajudar a fazer perguntas melhores sobre a Bíblia, mas não deve decidir por nós aquilo em que acreditamos.”"
+    ],
+    "bridge": "Ligue com Atos 17.11 (examinar as Escrituras) e Tiago 1.5 (pedir sabedoria a Deus).",
+    "tip": ""
+   },
+   {
+    "id": "t49",
+    "tela": 49,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "Tiago 1.5",
+      "text": "Se algum de vocês tem falta de sabedoria, peça-a a Deus, que a todos dá livremente, de boa vontade; e lhe será concedida."
+     },
+     {
+      "ref": "João 14.26",
+      "text": "Mas o Conselheiro, o Espírito Santo, que o Pai enviará em meu nome, lhes ensinará todas as coisas e lhes fará lembrar tudo o que eu lhes disse."
+     },
+     {
+      "ref": "Provérbios 3.5-6",
+      "text": "Confie no Senhor de todo o seu coração e não se apoie em seu próprio entendimento; reconheça o Senhor em todos os seus caminhos, e ele endireitará as suas veredas."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b6",
+    "block": 6,
+    "label": "Bloco 06",
+    "title": "Presença"
+   },
+   {
+    "id": "t52",
+    "tela": 52,
+    "kind": "card",
+    "both": true,
+    "title": "Conectados e sozinhos",
+    "q": "Ambos: Nunca estivemos tão conectados, e a solidão só cresce. Por que a conexão digital não preenche?",
+    "say": [],
+    "bridge": "",
+    "tip": "Pergunta para os dois."
+   },
+   {
+    "id": "t53",
+    "tela": 53,
+    "kind": "ref",
+    "who": "Martinho",
+    "text": "Deus poderia ter mandado só uma mensagem, mas veio em carne e osso. O que a encarnação ensina sobre a igreja num tempo em que tudo é online? O culto online substitui o presencial?"
+   },
+   {
+    "id": "t54",
+    "tela": 54,
+    "kind": "card",
+    "both": false,
+    "title": "Alcance ≠ fidelidade",
+    "q": "Como a igreja pode usar as redes para alcançar pessoas sem virar marketing ou disputa por engajamento?",
+    "say": [
+     "A igreja pode usar a tecnologia para anunciar o evangelho, divulgar estudos bíblicos, responder dúvidas. A IA ajuda a preparar materiais, criar ilustrações para as crianças e organizar perguntas para os grupos.",
+     "Mas a pergunta é a finalidade: estamos publicando para edificar ou para ganhar curtidas e números?",
+     "Uma postagem pode alcançar milhares de pessoas e não ter profundidade. Um estudo com poucas pessoas pode gerar uma conversa que muda uma vida.",
+     "Métricas ajudam a entender o alcance, mas não medem fidelidade."
+    ],
+    "bridge": "João 1.14 e Hebreus 10.24-25: a presença digital pode aproximar alguém da igreja, mas não substitui a comunhão, o cuidado pastoral e a vida em comunidade.",
+    "tip": ""
+   },
+   {
+    "id": "t55",
+    "tela": 55,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "João 1.14",
+      "text": "Aquele que é a Palavra tornou-se carne e viveu entre nós. Vimos a sua glória, glória como do Unigênito vindo do Pai, cheio de graça e de verdade."
+     },
+     {
+      "ref": "Hebreus 10.24-25",
+      "text": "E consideremo-nos uns aos outros para nos incentivarmos ao amor e às boas obras. Não deixemos de reunir-nos como igreja, segundo o costume de alguns, mas procuremos encorajar-nos uns aos outros, ainda mais quando vocês veem que se aproxima o Dia."
+     },
+     {
+      "ref": "Atos 2.42",
+      "text": "Eles se dedicavam ao ensino dos apóstolos e à comunhão, ao partir do pão e às orações."
+     }
+    ]
+   },
+   {
+    "kind": "block",
+    "id": "b7",
+    "block": 7,
+    "label": "Fechamento",
+    "title": "Usar sem ser usado"
+   },
+   {
+    "id": "t58",
+    "tela": 58,
+    "kind": "card",
+    "both": false,
+    "title": "Cinco atitudes",
+    "q": "Que atitudes práticas ajudam alguém a usar a tecnologia sem ser dominado por ela?",
+    "say": [
+     "1. Estabeleça limites para a atenção: momentos sem celular, menos notificações, tempo real para Bíblia, oração, descanso e convivência.",
+     "2. Use a IA para aprender, não para substituir o seu estudo: leia a passagem, faça as suas perguntas, confira as referências.",
+     "3. Não aceite uma resposta só porque ela agrada: peça objeções, examine o contexto.",
+     "4. Não troque relacionamentos por conversas artificiais: procure pessoas de confiança e cristãos maduros.",
+     "5. Verifique antes de acreditar e de compartilhar: informações, versículos, imagens e vídeos."
+    ],
+    "bridge": "",
+    "tip": ""
+   },
+   {
+    "id": "t59",
+    "tela": 59,
+    "kind": "card",
+    "both": false,
+    "title": "Limpe o seu algoritmo",
+    "q": "Dica prática: limpar o algoritmo",
+    "say": [
+     "“Se alguma coisa no seu algoritmo te incomoda, ou está atrapalhando a sua fé, limpe. Agora. Não deixe para depois.”",
+     "“Depois de limpar, deixe claro para ele quem você é: um cristão de verdade.”",
+     "Na prática: siga páginas e igrejas sérias, pesquise e assista estudos bíblicos, louvor e pregações, e marque “Não tenho interesse” no que te afasta de Deus. O algoritmo aprende rápido.",
+     "“Na próxima tela eu mostro o passo a passo no Instagram e no TikTok.”"
+    ],
+    "bridge": "Romanos 12.2: renovar a mente começa também pelo que a gente deixa chegar até nós.",
+    "tip": ""
+   },
+   {
+    "id": "t60",
+    "tela": 60,
+    "kind": "card",
+    "both": false,
+    "title": "Renove o seu algoritmo",
+    "q": "Dica prática: limpar e renovar o algoritmo",
+    "say": [
+     "“Vocês sabiam que dá para zerar as sugestões e recomeçar?”",
+     "Instagram: Perfil › menu ☰ › Configurações e atividade › O que você vê › Preferências de conteúdo › Redefinir conteúdo sugerido › Avançar. A partir daí você reconstrói o seu feed com mais controle.",
+     "TikTok: Perfil › menu ☰ › Configurações e privacidade › Preferências de conteúdo › Atualizar o feed Para Você › Continuar.",
+     "Depois de zerar, treine de novo com intenção: siga, curta e assista ao que edifica. Use “Não tenho interesse” no que não presta (segure o dedo no vídeo ou toque nos três pontinhos).",
+     "No TikTok dá também para filtrar palavras-chave em Preferências de conteúdo › Filtrar palavras-chave."
+    ],
+    "bridge": "Ligação com 1 Coríntios 6.12 e Romanos 12.2: não deixar que nada nos domine; renovar a mente, inclusive no que deixamos chegar até nós.",
+    "tip": "Os nomes dos menus podem mudar um pouco conforme a versão do app. Esta tela fica parada para dar tempo de fotografar.",
+    "steps": [
+     {
+      "n": "Instagram",
+      "steps": [
+       "Perfil  ›  menu ☰",
+       "Configurações e atividade",
+       "O que você vê",
+       "Preferências de conteúdo",
+       "Redefinir conteúdo sugerido",
+       "Avançar"
+      ]
+     },
+     {
+      "n": "TikTok",
+      "steps": [
+       "Perfil  ›  menu ☰",
+       "Configurações e privacidade",
+       "Preferências de conteúdo",
+       "Atualizar o feed Para Você",
+       "Continuar"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "t61",
+    "tela": 61,
+    "kind": "card",
+    "both": true,
+    "title": "O primeiro celular",
+    "q": "Ambos: Que conselho a igreja daria a um adolescente que acabou de ganhar o primeiro celular?",
+    "say": [],
+    "bridge": "",
+    "tip": "Pergunta para os dois."
+   },
+   {
+    "id": "t62",
+    "tela": 62,
+    "kind": "ref",
+    "who": "Martinho",
+    "text": "Como seguir Jesus neste mundo digital sem fugir dele e sem ser engolido por ele?"
+   },
+   {
+    "id": "t63",
+    "tela": 63,
+    "kind": "verses",
+    "title": "Textos de apoio · NVI",
+    "verses": [
+     {
+      "ref": "Romanos 12.2",
+      "text": "Não se amoldem ao padrão deste mundo, mas transformem-se pela renovação da sua mente, para que sejam capazes de experimentar e comprovar a boa, agradável e perfeita vontade de Deus."
+     },
+     {
+      "ref": "Filipenses 4.8",
+      "text": "Finalmente, irmãos, tudo o que for verdadeiro, tudo o que for nobre, tudo o que for correto, tudo o que for puro, tudo o que for amável, tudo o que for de boa fama, se houver algo de excelente ou digno de louvor, pensem nessas coisas."
+     }
+    ]
+   },
+   {
+    "id": "t64",
+    "tela": 64,
+    "kind": "card",
+    "both": false,
+    "title": "Fala final",
+    "q": "Fala final",
+    "say": [
+     "“Eu não acredito que precisamos fugir da tecnologia. Acredito que precisamos aprender a usá-la com sabedoria.”",
+     "“Hoje podemos usar a IA para entender uma passagem, investigar uma doutrina, organizar um estudo ou criar uma imagem que nos ajude a visualizar o mundo bíblico.”",
+     "“Mas a IA pode errar. Pode confirmar o que queremos ouvir. Pode produzir uma resposta convincente sem que ela seja verdadeira.”",
+     "“Romanos 12.2 nos chama à renovação da mente. E a nossa mente está sendo formada todos os dias, pelo que assistimos, lemos, ouvimos e repetimos.”",
+     "“A pergunta não é se vamos usar a tecnologia. A pergunta é: vamos deixar os algoritmos decidirem em que acreditamos, ou vamos usá-los com discernimento, tendo a Palavra de Deus como referência?”",
+     "“Que a tecnologia esteja em nossas mãos, sem ocupar o lugar que pertence a Cristo.”"
+    ],
+    "bridge": "",
+    "tip": ""
+   },
+   {
+    "id": "t65",
+    "tela": 65,
+    "kind": "ref",
+    "who": "Jonatas",
+    "text": "Espaço aberto para perguntas"
+   },
+   {
+    "id": "t66",
+    "tela": 66,
+    "kind": "ref",
+    "who": "Jonatas",
+    "text": "Obrigado · Deus abençoe"
+   }
+  ]
+ }
+}

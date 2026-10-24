@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Fé na Era dos Algoritmos</title>
+<meta name="description" content="Bate-Papo Jovem da IEFAC: telão, falas do Jonatas, do Martinho e do Gabriel, e materiais de estudo.">
+<link rel="icon" href="img/logo-branca.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#000;--card:#0e0e0e;--card2:#141414;--ink:#f5f5f2;--muted:#8e8e89;--line:rgba(245,245,242,.13);--good:#8fb8ff;--bad:#ff5b52;--fs:17px;--ease:cubic-bezier(.16,1,.3,1)}
+:root[data-theme=light]{--bg:#f5f5f2;--card:#fff;--card2:#fafaf7;--ink:#0b0b0c;--muted:#6f6f69;--line:rgba(0,0,0,.11);--good:#2e64c8;--bad:#c92a22}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 var(--fs)/1.55 "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:root[data-theme=light] .inv{filter:invert(1)}
+
+/* cabeçalho */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line);padding:calc(8px + env(safe-area-inset-top)) 16px 0}
+.top{display:flex;align-items:center;gap:12px;min-height:46px;max-width:1080px;margin:0 auto}
+.top img{height:28px}
+.top .t{flex:1;min-width:0;font-weight:650;letter-spacing:-.02em;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#clock{font-size:17px;font-weight:650;font-variant-numeric:tabular-nums;text-align:right;line-height:1.1;color:color-mix(in srgb,var(--bad) calc(var(--heat,0)*100%),var(--ink))}
+#clock small{display:block;font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.tabs{display:flex;gap:4px;overflow-x:auto;max-width:1080px;margin:0 auto;padding:6px 0 0;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{flex:none;padding:10px 14px 12px;text-decoration:none;font-size:14px;font-weight:600;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap}
+.tabs a.on{color:var(--ink);border-color:var(--ink)}
+.tabs a.ext{margin-left:auto;color:var(--ink)}
+
+main{max-width:760px;margin:0 auto;padding:16px 16px calc(90px + env(safe-area-inset-bottom))}
+.view{display:none}
+.view.on{display:block;animation:fade .5s var(--ease)}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* início */
+.hero{padding:40px 0 18px}
+.eb{font-size:11px;font-weight:650;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+.hero h1{margin:12px 0 10px;font-size:clamp(40px,10vw,68px);font-weight:650;letter-spacing:-.055em;line-height:.95}
+.hero p{margin:0;color:var(--muted);font-size:17px}
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+.person{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.person img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1)}
+.person div{padding:10px 12px 12px}
+.person b{display:block;font-size:16px;letter-spacing:-.02em}
+.person span{font-size:12px;color:var(--muted)}
+.links{display:grid;gap:10px;margin:8px 0 24px}
+.link{display:flex;align-items:center;gap:14px;padding:16px;border-radius:18px;background:var(--card);border:1px solid var(--line);text-decoration:none}
+.link .ic{width:42px;height:42px;border-radius:12px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-weight:700;font-size:14px;flex:none}
+.link b{display:block;font-size:16px;letter-spacing:-.015em}
+.link span{display:block;font-size:13px;color:var(--muted)}
+.link .go{margin-left:auto;color:var(--muted);font-size:20px}
+.note{font-size:14px;color:var(--muted);border-left:2px solid var(--line);padding:2px 0 2px 12px;margin:18px 0}
+
+/* abas de pessoas */
+.ptitle{display:flex;align-items:center;gap:14px;margin:18px 0 6px}
+.ptitle img{width:56px;height:56px;border-radius:50%;object-fit:cover;filter:grayscale(1);border:1px solid var(--line)}
+.ptitle h2{margin:0;font-size:30px;font-weight:650;letter-spacing:-.04em;line-height:1}
+.ptitle span{display:block;font-size:13px;color:var(--muted);margin-top:4px}
+.tools{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 6px}
+.tools button{min-height:40px;padding:0 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);cursor:pointer;font-size:14px;font-weight:600}
+.tools button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;padding:7px 12px;border-radius:999px;border:1px solid var(--line);text-decoration:none;font-size:13px;font-weight:600;color:var(--muted)}
+.editbar{display:none;margin:10px 0;padding:12px 14px;border-radius:14px;background:color-mix(in srgb,var(--good) 14%,transparent);font-size:14px}
+.editing .editbar{display:block}
+h3.block{margin:34px 0 10px;font-size:24px;font-weight:650;letter-spacing:-.035em;line-height:1.1;scroll-margin-top:130px}
+h3.block small{display:block;margin-bottom:6px;font-size:11px;font-weight:650;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px 16px 18px;margin:12px 0;transition:opacity .3s}
+.card.done{opacity:.42}
+.meta{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.tela{flex:none;padding:3px 8px;border-radius:8px;border:1px solid var(--line);font-variant-numeric:tabular-nums}
+.chip{padding:3px 9px;border-radius:999px;background:var(--ink);color:var(--bg)}
+.chip.soft{background:none;border:1px solid var(--line);color:var(--muted)}
+.mod{color:var(--good)}
+.chk{margin-left:auto;width:34px;height:34px;border-radius:50%;border:1.5px solid var(--line);background:none;cursor:pointer;position:relative;flex:none}
+.done .chk{background:var(--ink);border-color:var(--ink)}
+.done .chk::after{content:"";position:absolute;left:12px;top:8px;width:7px;height:13px;border:solid var(--bg);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.card h4{margin:12px 0 6px;font-size:1.22em;font-weight:650;letter-spacing:-.025em;line-height:1.2}
+.q{margin:6px 0 10px;color:var(--muted);font-size:.93em}
+.ask .q{color:var(--ink);font-size:1.15em;font-weight:600;line-height:1.4;letter-spacing:-.01em}
+ul,ol{margin:8px 0;padding-left:1.15em}
+li{margin:9px 0}
+.br{margin:14px 0 0;padding:2px 0 2px 12px;border-left:2px solid var(--good)}
+.tip{margin:10px 0 0;font-size:.82em;color:var(--muted);font-style:italic}
+.box{margin-top:12px;padding:12px 14px;border:1px solid var(--line);border-radius:14px}
+.v{margin:14px 0 0;font-size:1.04em;line-height:1.5}
+.v b{display:block;margin-bottom:2px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--good)}
+.line{display:flex;gap:10px;align-items:baseline;padding:10px 4px;font-size:.86em;color:var(--muted);border-bottom:1px solid var(--line)}
+.line b{color:var(--ink);font-weight:600}
+textarea.notes{display:none;width:100%;min-height:70px;margin-top:12px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--card2);color:var(--ink);font:inherit;font-size:.92em;resize:vertical}
+.editing textarea.notes,textarea.notes.has{display:block}
+.editing [data-ed]{outline:1px dashed color-mix(in srgb,var(--good) 60%,transparent);outline-offset:3px;border-radius:4px;cursor:text}
+.editing [data-ed]:focus{outline:2px solid var(--good);background:color-mix(in srgb,var(--good) 8%,transparent)}
+.restore{display:none;margin-top:10px;border:none;background:none;color:var(--good);font-size:13px;font-weight:600;padding:0;cursor:pointer}
+.card.modified .restore{display:inline-block}
+.addli{display:none;margin-top:6px;border:none;background:none;color:var(--good);font-size:13px;font-weight:600;padding:0;cursor:pointer}
+.editing .addli{display:inline-block}
+#prog{position:fixed;left:0;right:0;bottom:0;height:3px;background:var(--line);z-index:30}
+#prog i{display:block;height:100%;width:0;background:var(--ink);transition:width .4s}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);padding:10px 16px;border-radius:999px;background:var(--ink);color:var(--bg);font-size:14px;font-weight:600;opacity:0;transition:opacity .3s;pointer-events:none;z-index:40}
+.toast.on{opacity:1}
+footer{margin-top:40px;font-size:13px;color:var(--muted);text-align:center}
+@media (max-width:420px){.people{gap:8px}.person div{padding:8px 9px 10px}.person b{font-size:14px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="top"><img class="inv" src="img/logo-branca.png" alt=""><div class="t">Fé na Era dos Algoritmos</div><div id="clock"></div></div>
+  <nav class="tabs">
+    <a href="#inicio" data-v="inicio">Início</a>
+    <a href="#jonatas" data-v="jonatas">Jonatas</a>
+    <a href="#martinho" data-v="martinho">Martinho</a>
+    <a href="#gabriel" data-v="gabriel">Gabriel</a>
+    <a href="#materiais" data-v="materiais">Materiais</a>
+    <a class="ext" href="telao/" target="_blank" rel="noopener">Telão ↗</a>
+  </nav>
+</header>
+
+<main>
+  <!-- INÍCIO -->
+  <section class="view" id="v-inicio">
+    <div class="hero">
+      <div class="eb">Bate-Papo Jovem · IEFAC</div>
+      <h1>Fé na Era<br>dos Algoritmos</h1>
+      <p>Igreja Evangélica Fonte de Amor em Cristo · Provérbios 3.5</p>
+    </div>
+    <div class="people">
+      <a class="person" href="#jonatas"><img src="img/jonatas.jpg" alt="Jonatas"><div><b>Jonatas</b><span>Apresentação</span></div></a>
+      <a class="person" href="#martinho"><img src="img/martinho.jpg" alt="Martinho"><div><b>Martinho</b><span>Bíblia e fé</span></div></a>
+      <a class="person" href="#gabriel"><img src="img/gabriel.jpg" alt="Gabriel"><div><b>Gabriel</b><span>Tecnologia</span></div></a>
+    </div>
+    <div class="links">
+      <a class="link" href="telao/" target="_blank" rel="noopener"><div class="ic">▶</div><div><b>Abrir o telão</b><span>Para o computador do telão. Depois aperte F para tela cheia.</span></div><div class="go">↗</div></a>
+      <a class="link" href="telao-unsplash/" target="_blank" rel="noopener"><div class="ic">▶</div><div><b>Telão · versão com fotos do Unsplash</b><span>As transições só com fotos do Unsplash.</span></div><div class="go">↗</div></a>
+      <a class="link" href="#materiais"><div class="ic">PDF</div><div><b>Materiais</b><span>Guia de estudo, roteiro do encontro e roteiro do Gabriel.</span></div><div class="go">›</div></a>
+    </div>
+    <p class="note">Cada um abre a sua aba no celular. Dá para marcar o que já falou e editar as próprias falas (as alterações ficam salvas no aparelho de quem editou).</p>
+  </section>
+
+  <!-- PESSOAS -->
+  <section class="view" id="v-jonatas"></section>
+  <section class="view" id="v-martinho"></section>
+  <section class="view" id="v-gabriel"></section>
+
+  <!-- MATERIAIS -->
+  <section class="view" id="v-materiais">
+    <div class="hero" style="padding-top:20px"><div class="eb">Materiais</div><h1 style="font-size:40px">Para estudar e consultar</h1></div>
+    <div class="links">
+      <a class="link" href="materiais/guia-de-estudo.pdf" target="_blank" rel="noopener"><div class="ic">PDF</div><div><b>Guia de estudo</b><span>Algoritmo e IA explicados, versículos com contexto, perguntas da plateia.</span></div><div class="go">↗</div></a>
+      <a class="link" href="materiais/roteiro-do-encontro.pdf" target="_blank" rel="noopener"><div class="ic">PDF</div><div><b>Roteiro do encontro</b><span>As perguntas de cada bloco e os textos de apoio.</span></div><div class="go">↗</div></a>
+      <a class="link" href="materiais/roteiro-gabriel.html" target="_blank" rel="noopener"><div class="ic">TXT</div><div><b>Roteiro completo do telão</b><span>Tela por tela, para imprimir.</span></div><div class="go">↗</div></a>
+      <a class="link" href="telao/" target="_blank" rel="noopener"><div class="ic">▶</div><div><b>Telão</b><span>→ avançar · ← voltar · B logo · O lista de cenas · P falas · F tela cheia · C cor e relógio</span></div><div class="go">↗</div></a>
+    </div>
+    <p class="note">Para mudar uma fala para todo mundo (e não só no seu aparelho), o texto fica no arquivo <b>dados/falas.json</b> do repositório no GitHub.</p>
+  </section>
+  <footer>IEFAC · Bate-Papo Jovem · versículos NVI</footer>
+</main>
+<div id="prog"><i></i></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const root=document.documentElement;
+const LS={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}},del(k){try{localStorage.removeItem(k)}catch(e){}}};
+const esc=t=>String(t==null?'':t).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const PEOPLE={jonatas:{name:'Jonatas',role:'Apresentação · conduz as perguntas',img:'img/jonatas.jpg'},martinho:{name:'Martinho',role:'Bíblia e fé',img:'img/martinho.jpg'},gabriel:{name:'Gabriel',role:'Tecnologia',img:'img/gabriel.jpg'}};
+let DATA=null;
+function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('on');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('on'),1800);}
+
+/* tamanho da letra */
+let fs=+LS.get('fs')||17;const setFs=()=>{root.style.setProperty('--fs',fs+'px');LS.set('fs',fs);};setFs();
+
+/* relógio: vermelho chegando às 17:00, meta 17:10 */
+const A=16*60+40,Z=17*60,L=17*60+10,ck=document.getElementById('clock');
+function tick(){const d=new Date(),m=d.getHours()*60+d.getMinutes()+d.getSeconds()/60;ck.style.setProperty('--heat',Math.max(0,Math.min(1,(m-A)/(Z-A))));
+  const note=m>=L?'+'+Math.floor(m-L)+' min':m>=Z?'faltam '+Math.ceil(L-m)+' min':'';ck.innerHTML=d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'})+(note?'<small>'+note+'</small>':'');}
+tick();setInterval(tick,10000);
+
+/* edição: guarda só o que mudou, por pessoa e por tela */
+const ek=(p,id)=>`ed:${p}:${id}`;
+const getEd=(p,id)=>{try{return JSON.parse(LS.get(ek(p,id))||'null')}catch(e){return null}};
+function saveCard(p,card){
+  const id=card.dataset.id,orig=findItem(p,id),ed={};
+  const lis=[...card.querySelectorAll('li[data-ed]')].map(li=>li.innerText.trim()).filter(Boolean);
+  if(orig.say&&JSON.stringify(lis)!==JSON.stringify(orig.say))ed.say=lis;
+  const q=card.querySelector('.q[data-ed]');if(q&&q.innerText.trim()!==(orig.q||''))ed.q=q.innerText.trim();
+  const n=card.querySelector('textarea.notes');if(n&&n.value.trim())ed.notes=n.value;
+  if(Object.keys(ed).length){LS.set(ek(p,id),JSON.stringify(ed));card.classList.add('modified');}else{LS.del(ek(p,id));card.classList.remove('modified');}
+  n&&n.classList.toggle('has',!!n.value.trim());
+}
+const findItem=(p,id)=>DATA.pessoas[p].find(x=>x.id===id&&x.kind!=='block');
+
+/* marcar o que já falou */
+const dk=p=>`done:${p}`;
+const getDone=p=>new Set(JSON.parse(LS.get(dk(p))||'[]'));
+
+function render(p){
+  const box=document.getElementById('v-'+p),info=PEOPLE[p],done=getDone(p);
+  /* esconde blocos sem nada desta pessoa */
+  const used=new Set();let curB=null;for(const it of DATA.pessoas[p]){if(it.kind==='block')curB=it.id;else used.add(curB);}
+  const items=DATA.pessoas[p].filter(it=>it.kind!=='block'||used.has(it.id));
+  const blocks=items.filter(x=>x.kind==='block');
+  let h=`<div class="ptitle"><img src="${info.img}" alt=""><div><h2>${info.name}</h2><span>${info.role}</span></div></div>
+  <div class="tools"><button data-a="edit">Editar minhas falas</button><button data-a="copy">Copiar</button><button data-a="fs-">A−</button><button data-a="fs+">A+</button><button data-a="theme">Tema</button><button data-a="wake">Tela ligada</button></div>
+  <div class="chips">${blocks.map(b=>`<a href="#${p}/${b.id}">${b.block>0&&b.block<7?String(b.block).padStart(2,'0'):b.label}</a>`).join('')}</div>
+  <div class="editbar">Modo de edição: toque no texto para mudar. Tudo é salvo neste aparelho automaticamente. Use "Restaurar original" para desfazer.</div>`;
+  for(const it of items){
+    if(it.kind==='block'){h+=`<h3 class="block" id="${p}-${it.id}"><small>${it.label}</small>${esc(it.title)}</h3>`;continue;}
+    const ed=getEd(p,it.id)||{},isDone=done.has(it.id);
+    if(it.kind==='ref'){h+=`<div class="line"><span class="tela">Tela ${it.tela}</span><span><b>${it.who}</b> ${esc(it.text)}</span></div>`;continue;}
+    if(it.kind==='cue'){h+=`<div class="line"><span class="tela">Tela ${it.tela}</span><span><b>${esc(it.title)}</b> ${esc(it.text||'')}</span></div>`;continue;}
+    if(it.kind==='verses'){h+=`<article class="card"><div class="meta"><span class="tela">Tela ${it.tela}</span><span>${esc(it.title)}</span></div>${it.text?`<p class="tip">${esc(it.text)}</p>`:''}${it.verses.map(v=>`<p class="v"><b>${esc(v.ref)}</b>${esc(v.text)}</p>`).join('')}</article>`;continue;}
+    const say=ed.say||it.say||[],q=ed.q!=null?ed.q:(it.q||'');
+    const who=it.kind==='ask'?`<span class="chip">${esc(it.toLabel)}</span>`:(it.both?`<span class="chip soft">Para os dois</span>`:'');
+    h+=`<article class="card ${it.kind==='ask'?'ask':''} ${isDone?'done':''} ${getEd(p,it.id)?'modified':''}" data-id="${it.id}">
+      <div class="meta"><span class="tela">Tela ${it.tela}</span>${who}<button class="chk" aria-label="Marcar como feito"></button></div>
+      <h4>${esc(it.title)}</h4>
+      ${q?`<p class="q" data-ed>${esc(q)}</p>`:''}
+      ${it.kind!=='ask'?`<ul>${say.map(x=>`<li data-ed>${esc(x)}</li>`).join('')}</ul><button class="addli">+ adicionar ponto</button>`:''}
+      ${it.steps?it.steps.map(a=>`<div class="box"><b>${esc(a.n)}</b><ol>${a.steps.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>`).join(''):''}
+      ${it.prompt?`<div class="box"><b>Atue como assistente de estudo bíblico, na perspectiva cristã reformada.</b><ol>${it.prompt.map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div>`:''}
+      ${it.bridge?`<p class="br">${esc(it.bridge)}</p>`:''}
+      ${it.tip?`<p class="tip">${esc(it.tip)}</p>`:''}
+      <textarea class="notes ${ed.notes?'has':''}" placeholder="Minhas anotações">${esc(ed.notes||'')}</textarea>
+      <button class="restore">Restaurar original</button>
+    </article>`;
+  }
+  box.innerHTML=h;
+  wire(p,box);paintProg(p);
+}
+
+function wire(p,box){
+  let editing=false;
+  box.addEventListener('click',e=>{
+    const b=e.target.closest('button');if(!b)return;
+    const card=b.closest('.card');
+    if(b.classList.contains('chk')){const d=getDone(p);d.has(card.dataset.id)?d.delete(card.dataset.id):d.add(card.dataset.id);LS.set(dk(p),JSON.stringify([...d]));card.classList.toggle('done');paintProg(p);return;}
+    if(b.classList.contains('restore')){LS.del(ek(p,card.dataset.id));render(p);if(editing)toggleEdit(true);toast('Original restaurado');return;}
+    if(b.classList.contains('addli')){const ul=card.querySelector('ul');const li=document.createElement('li');li.dataset.ed='';li.contentEditable='true';ul.appendChild(li);li.focus();return;}
+    const a=b.dataset.a;
+    if(a==='edit'){editing=!editing;toggleEdit(editing);}
+    if(a==='copy'){copyAll(p);}
+    if(a==='fs-'){fs=Math.max(14,fs-1);setFs();}
+    if(a==='fs+'){fs=Math.min(28,fs+1);setFs();}
+    if(a==='theme'){const t=root.dataset.theme==='light'?'dark':'light';root.dataset.theme=t;LS.set('theme',t);}
+    if(a==='wake'){wake(b);}
+  });
+  function toggleEdit(on){editing=on;box.classList.toggle('editing',on);box.querySelector('[data-a=edit]').classList.toggle('on',on);
+    box.querySelector('[data-a=edit]').textContent=on?'Concluir edição':'Editar minhas falas';
+    box.querySelectorAll('[data-ed]').forEach(el=>el.contentEditable=on?'true':'false');}
+  let t;box.addEventListener('input',e=>{const card=e.target.closest('.card[data-id]');if(!card)return;clearTimeout(t);t=setTimeout(()=>saveCard(p,card),400);});
+}
+
+function copyAll(p){
+  const lines=[`Fé na Era dos Algoritmos · ${PEOPLE[p].name}`,''];
+  document.querySelectorAll(`#v-${p} h3.block, #v-${p} .card[data-id]`).forEach(el=>{
+    if(el.tagName==='H3'){lines.push('',el.innerText.replace('\n',' · ').toUpperCase());return;}
+    lines.push('',`Tela ${el.querySelector('.tela').textContent.replace('Tela ','')} · ${el.querySelector('h4').innerText}`);
+    const q=el.querySelector('.q');if(q)lines.push(q.innerText);
+    el.querySelectorAll('ul li').forEach(li=>lines.push('• '+li.innerText));
+    const n=el.querySelector('textarea.notes');if(n&&n.value.trim())lines.push('Anotações: '+n.value.trim());
+  });
+  navigator.clipboard.writeText(lines.join('\n')).then(()=>toast('Falas copiadas'),()=>toast('Não foi possível copiar'));
+}
+
+function paintProg(p){const cards=[...document.querySelectorAll(`#v-${p} .card[data-id]`)];const n=cards.filter(c=>c.classList.contains('done')).length;
+  document.querySelector('#prog i').style.width=cards.length?(n/cards.length*100)+'%':'0';}
+
+let lock=null;async function wake(b){try{if(lock&&!lock.released){await lock.release();lock=null;b.classList.remove('on');return;}lock=await navigator.wakeLock.request('screen');b.classList.add('on');toast('Tela vai ficar ligada');}catch(e){toast('Este navegador não permite');}}
+
+/* rotas: #inicio, #jonatas, #martinho/b3 ... */
+function route(){
+  const [v,sub]=(location.hash.slice(1)||'inicio').split('/');
+  const view=document.getElementById('v-'+v)?v:'inicio';
+  document.querySelectorAll('.view').forEach(s=>s.classList.toggle('on',s.id==='v-'+view));
+  document.querySelectorAll('.tabs a[data-v]').forEach(a=>a.classList.toggle('on',a.dataset.v===view));
+  if(PEOPLE[view]){paintProg(view);}else document.querySelector('#prog i').style.width='0';
+  if(sub){const el=document.getElementById(view+'-'+sub);if(el)el.scrollIntoView({behavior:'smooth'});}else window.scrollTo(0,0);
+}
+root.dataset.theme=LS.get('theme')||'dark';
+addEventListener('hashchange',route);
+fetch('dados/falas.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{DATA=d;Object.keys(PEOPLE).forEach(render);route();})
+  .catch(()=>{document.querySelector('main').insertAdjacentHTML('afterbegin','<p class="note">Não foi possível carregar as falas. Abra pelo link do site (não pelo arquivo).</p>');route();});
+</script>
+</body>
+</html>
